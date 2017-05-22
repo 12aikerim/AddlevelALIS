@@ -9,10 +9,7 @@ $(document).ready(function() {
 			type: 'post',
 			data: $(this).serializeArray(),
 			success: function(data, textStatus, jqxhr) {
-				// todo: move the user to profile page
-				// navigate to a page on the same domain
-				// document.location = "/profile";
-				window.location.href = '/FAQ.html';
+				window.location.href = '/client-dashboard.html';
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
 				var errors = jqXHR.responseJSON;
@@ -21,7 +18,6 @@ $(document).ready(function() {
 					msg += key + ": " + errors[key][0] + '\n';
 				}
 				alert(msg);
-				// todo: display errors
 			}
 		});
 	});
@@ -36,6 +32,8 @@ $(document).ready(function() {
 			success: function(data, textStatus, jqxhr) {
 				// todo: tell user to go check their email
 				// todo: redirect user to home page
+				alert("Please check your email for verification email");
+				window.location.href = '/client-dashboard.html';
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
 				var errors = jqXHR.responseJSON
