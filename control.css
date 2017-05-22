@@ -1,3 +1,10 @@
+/* Footer */
+.left_align_footer_image{
+  margin-left:20px;
+}
+
+
+
 /*Sticky footer from Foundation */
 .sticky-footer-css {
   height: 100vh;
@@ -27,7 +34,7 @@
 
 .sticky-footer-css .footer {
   height: 10rem;
-  background-color: #0093d0;
+  background-color: #0081c3;
   color: #fff;
   padding: 3rem;
 }
