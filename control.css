@@ -1,3 +1,31 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+    padding: 25px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10s0px;
+    width: 100%;
+    overflow:hidden;
+    background-color: #0081c3;
+}
+
+.link_color{
+  text-decoration-color: #ffffff;
+}
+
+#padding_top_logo{
+  padding-top: 15px;
+}
+
 /* Footer */
 .left_align_footer_image{
   margin-left:20px;
@@ -11,6 +39,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .sticky-footer-css-body {
@@ -30,6 +59,7 @@
 
 .sticky-footer-css .body-content {
   background-color: #fff;
+  width: 100%;
 }
 
 .sticky-footer-css .footer {
@@ -37,6 +67,7 @@
   background-color: #0081c3;
   color: #fff;
   padding: 3rem;
+  width: 100%;
 }
 
 .sticky-footer-css .footer .menu a {
