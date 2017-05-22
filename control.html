@@ -6,7 +6,7 @@
 
 	<!-- UIkit CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
-	<link red="stylesheet" href="./style.css"/>
+	<link red="stylesheet" href="./control.css"/>
 
 	<!-- jQuery is required -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -14,13 +14,28 @@
 	<!-- UIkit JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit-icons.min.js"></script>
+
+  <script src = "./control.js"></script>
+
 </head>
 <body>
 
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-      <h3 class="uk-card-title">Default</h3>
-      <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid>
+      <div>
+        <div class="uk-card uk-card-default uk-card-body">
+          <h3 class="uk-card-title" id = "controlTitle">controlTitle</h3>
+          <p id = "controlText">controlText     Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <progress id="controlProgress" class="uk-progress" value="10" max="100"></progress>
+        </div>
+      </div>
     </div>
+
+
+
+
+  <!--   change the "value" attribute to change the progress value -->
+
 
 </body>
 
