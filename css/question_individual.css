@@ -1,0 +1,68 @@
+/* Center div */
+.adina {
+  background-color: red;
+}
+
+.center_div{
+  margin-left: 40%;
+  margin-right: 0%;
+}
+
+.left_text{
+  text-align: left;
+}
+
+.top_spacing{
+  margin-top: 5%;
+}
+
+h5.question_text{
+  color: #565656;
+  font-size: 20px;
+}
+
+h4.question_number{
+  color: #565656;
+  font-size: 25px;
+}
+
+
+h5.alert_message_title{
+  color: #565656;
+  font-size: 25px;
+
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+h5.alert_message_subtitle{
+  color: #565656;
+  font-size: 20px;
+
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.option_spacing{
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.align_right{
+  margin-left: 70%;
+}
+
+.btn{
+  width: 100px;
+}
+.progressnumber{
+
+margin-left: 40%;
+margin-right: 0%;
+}
+p{
+
+    text-emphasis-color: dodgerblue;
+
+
+}
