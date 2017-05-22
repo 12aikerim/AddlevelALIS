@@ -3,7 +3,7 @@ siteRoot = 'http://localhost:61071'
 $(document).ready(function() {
 	$('#login-form').on('submit', function(e) {
 		e.preventDefault();
-		
+
 		$.ajax({
 			url: siteRoot + $(this).attr('action'),
 			type: 'post',
@@ -12,6 +12,7 @@ $(document).ready(function() {
 				// todo: move the user to profile page
 				// navigate to a page on the same domain
 				// document.location = "/profile";
+				window.location.href = '/FAQ.html';
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
 				var errors = jqXHR.responseJSON;
@@ -24,10 +25,10 @@ $(document).ready(function() {
 			}
 		});
 	});
-	
+
 	$('#register-form').on('submit', function(e) {
 		e.preventDefault();
-		
+
 		$.ajax({
 			url: siteRoot + $(this).attr('action'),
 			type: 'post',
@@ -42,7 +43,7 @@ $(document).ready(function() {
 			}
 		});
 	});
-	
+
 	$.ajax({
 		url: siteRoot + '/constant/positions',
 		type: 'get',
