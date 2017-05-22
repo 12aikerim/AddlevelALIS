@@ -36,8 +36,13 @@ $(document).ready(function() {
 				window.location.href = '/client-dashboard.html';
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
-				var errors = jqXHR.responseJSON
 				// todo: display errors
+				var errors = jqXHR.responseJSON;
+				msg = "Errors:\n";
+				for (var key in errors) {
+					msg += key + ": " + errors[key][0] + '\n';
+				}
+				alert(msg);
 			}
 		});
 	});
