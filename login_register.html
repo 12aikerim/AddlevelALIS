@@ -13,7 +13,8 @@
     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
     	<!-- jQuery is required -->
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    	<!-- UIkit JS -->
+    	 <script type="text/javascript" src="userscript.js"></script>
+		<!-- UIkit JS -->
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit.min.js"></script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit-icons.min.js"></script>
       <link rel="stylesheet" href="style.css">
@@ -26,7 +27,7 @@
 <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
   <div>
                 <div class="center_div top_center_div center_text">
-                  <form>
+                  <form action="/account/login" method="post" id="login-form">
                       <div class="uk-margin">
                         <div class="uk-inline">
                             <legend class="uk-legend center_div">Login</legend>
@@ -37,7 +38,7 @@
                         <div class="uk-margin">
                           <div class="uk-inline">
                               <span class="uk-form-icon" uk-icon="icon: user"></span>
-                              <input class="uk-input" type="text" placeholder="Username">
+                              <input class="uk-input" type="email" placeholder="Email" name="email">
                           </div>
                         </div>
 
@@ -45,14 +46,14 @@
                         <div class="uk-margin">
                           <div class="uk-inline">
                               <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-                              <input class="uk-input" type="text" placeholder="Password">
+                              <input class="uk-input" type="password" placeholder="Password" name="password">
                           </div>
                         </div>
 
-                            <button class="uk-button uk-button-primary">Sign In</button>
+                            <input type="submit" class="uk-button uk-button-primary" value="submit"/>
                           </br>
                           </br>
-                        <label><input class="uk-checkbox" type="checkbox"> Remember Me</label>
+                        <label><input class="uk-checkbox" type="checkbox" name="rememberme" value="true">Remember Me</label>
                     </fieldset>
                     </form>
 
@@ -64,7 +65,7 @@
 <div>
           <div> <!-- DIV for the registration page -->
                     <div class="register-center_div top_margin center_text">
-                      <form>
+                      <form action="/account/register" method="post" id="register-form">
                           <div class="uk-margin">
                             <div class="uk-inline">
                                 <legend class="uk-legend">Register</legend>
@@ -73,64 +74,47 @@
 
 
                           <div class="uk-margin">
-                            <input class="uk-input" type="text" placeholder="First Name">
+                            <input class="uk-input" type="text" placeholder="First Name" name="firstname">
                           </div>
 
                           <div class="uk-margin">
-                            <input class="uk-input" type="text" placeholder="Last Name">
+                            <input class="uk-input" type="text" placeholder="Last Name" name="lastname">
                           </div>
 
                           <div class="uk-margin">
-                            <input class="uk-input" type="text" placeholder="Email">
+                            <input class="uk-input" type="text" placeholder="Email" name="email">
                           </div>
 
                           <div class="uk-margin">
-                            <input class="uk-input" type="text" placeholder="Phone">
+                            <input class="uk-input" type="text" placeholder="Phone" name="phone">
                           </div>
 
 
                       <div class="tutorialWrapper">
-                        <form>
                             <div class="fieldWrapper">
 
                           <div class="uk-margin">
-                            <label for="pass1"> <!-- Giving the password a label pass1 -->
-                              <input class="uk-input" type="password" placeholder="Password" name="pass1" id="pass1">
-                            </label>
+                              <input class="uk-input" type="password" placeholder="Password" name="password" id="register-password">
                           </div>
 
                           <div class="uk-margin">
-                            <label for="pass2">
-                            <input class="uk-input" type="password" placeholder="Confirm Password" name="pass2" id="pass2" onkeyup="checkPass(); return false;">
-                            <span id="confirmMessage" class="confirmMessage"></span>
-                            </label>
+                            <input class="uk-input" type="password" placeholder="Confirm Password" name="confirmPassword" id="register-confirmPassword">
                           </div>
 
 
 
 
                           <div class="uk-margin">
-                            <select class="uk-select">
+                            <select class="uk-select" id='register-position' name="position">
                                 <option>Select Position</option>
                                 <option></option>
-                                <option>Position 1</option>
-                                <option>Position 2</option>
-                                <option>Position 3</option>
-                                <option>Position 4</option>
-                                <option>Position 5</option>
                             </select>
                           </div>
 
                            <button class="uk-button uk-button-primary">Sign Up</button>
-                        </fieldset>
-                        </form>
                       </div>
                     </div> <!-- DIV for the registration half -->
-                  </div>
-                </div>
-
-
-<div>
+</div>
 
 
 
