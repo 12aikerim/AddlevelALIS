@@ -7,9 +7,12 @@ footer {
   padding-bottom: 70px;
   background-color: #011b25;
   height: 30px;
-  position: static;
+  width: 100%;
+  position: absolute;
+  right: 0;
   bottom: 0;
-  width: 100%
+  left: 0;
+
 }
 footer p {
   padding-top: 20px;
