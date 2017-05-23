@@ -33,9 +33,9 @@ $(document).ready(function () {
 				alert("Please check your email for verification email");
 				window.location.href = '/client-dashboard.html';
 			},
-			error: function(jqXHR, textStatus, errorThrown) {
+			error: function(jqxhr, textStatus, errorThrown) {
 				// todo: display errors
-				var errors = jqXHR.responseJSON;
+				var errors = jqxhr.responseJSON;
 				msg = "Errors:\n";
 				for (var key in errors) {
 					msg += key + ": " + errors[key][0] + '\n';
