@@ -8,178 +8,171 @@
 
 <html>
 <head>
-  <meta charset="UTF-8">
-  <!-- UIkit CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
-  <!-- jQuery is required -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
+    <!-- jQuery is required -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/profile.js"></script>
-  <!-- UIkit JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit-icons.min.js"></script>
-  <link rel="stylesheet" href="css/profile.css">
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/profile.css">
 
 </head>
 <body>
 
-  <div class="center_profile top_margin center_text" id="profile-div" hidden>
-      <div class="uk-margin">
-        <div class="uk-inline">
-          <legend class="uk-legend">Profile</legend>
+    <div class="center_profile top_margin center_text" id="profile-div" hidden>
+        <div class="uk-margin">
+            <div class="uk-inline">
+                <legend class="uk-legend">Profile</legend>
+            </div>
         </div>
-      </div>
 
 
-    <div>
-        <form action="/profile/edit" method="post" id="profile-edit-form">
-            <table class="profile_table">
-                <tr><td class="text_right_align">First Name</td><td id="profile-fname" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="firstname"></td></tr> <!--FIND ME-->
-                <tr><td class="text_right_align">Last Name</td><td id="profile-lname" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="lastname"></td></tr>
-                <tr><td class="text_right_align">Email</td><td id="profile-email" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="email"></td></tr>
-                <tr><td class="text_right_align">Phone</td><td id="profile-phone" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="phone"></td></tr>
-                <tr>
-                    <td class="text_right_align">Position</td>
-                    <td id="profile-position" class="text_left_align">
-                        <select class="uk-select no_field" name="position" disabled>
-                            <option></option>
-                            <option></option>
-                        </select>
-                    </td>
-                </tr> <!--FIND ME-->
-
-                <!-- Edit is outside the div, Submit is inside the div -->
-                <!-- Edit is a button, submit is an input -->
-            </table>
-            <input type = "submit" value = "save" class="uk-button uk-button-primary uk-button-small">
-        </form>
-      <button class="uk-button uk-button-primary uk-button-small">Edit</button>
+        <div>
+            <form action="/profile/EditInfo" method="post" id="profile-edit-form">
+                <table class="profile_table">
+                    <tr><td class="text_right_align">First Name</td><td id="profile-fname" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="firstname"></td></tr> <!--FIND ME-->
+                    <tr><td class="text_right_align">Last Name</td><td id="profile-lname" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="lastname"></td></tr>
+                    <tr><td class="text_right_align">Email</td><td id="profile-email" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="email"></td></tr>
+                    <tr><td class="text_right_align">Phone</td><td id="profile-phone" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="phone"></td></tr>
+                    <tr>
+                        <td class="text_right_align">Position</td>
+                        <td id="profile-position" class="text_left_align">
+                            <select class="uk-select no_field" name="position" disabled>
+                                <option value="0"></option>
+                                <option></option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="save" class="uk-button uk-button-primary uk-button-small b20width" hidden>
+            </form>
+            <button class="uk-button uk-button-primary uk-button-small b20width" id="profile-edit-btn">Edit</button>
+        </div>
     </div>
-  </div>
 
-<div class="center_profile top_margin center_text" id = "create-div" hidden>
-  <ul uk-accordion> <!-- The accordion to open the form to provide company information -->
-    <li class="uk-open">
-      <h3 class="uk-accordion-title">Company Info</h3>
-      <div class="uk-accordion-content">
-        <form action="/company/create" method="post" id="create-form">
+    <div class="center_profile top_margin center_text" id="create-div" hidden>
+        <ul uk-accordion>
+            <!-- The accordion to open the form to provide company information -->
+            <li class="uk-open">
+                <h3 class="uk-accordion-title">Company Info</h3>
+                <div class="uk-accordion-content">
+                    <form action="/company/create" method="post" id="create-form">
 
-          <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Company Name" name = "name">
-          </div>
-          <div class="uk-margin">
-            <select class="uk-select" name = "country" id="create-country">
-              <option>Country</option>
-              <option></option>
-            </select>
-          </div>
-
-          <div class="uk-margin">
-            <select class="uk-select" name = "industry" id="create-industry">
-              <option>Industry</option>
-              <option></option>
-            </select>
-          </div>
-
-          <div class="uk-margin">
-            <select class="uk-select" name = "size" id="create-size">
-              <option>Company Size</option>
-              <option></option>
-            </select>
-          </div>
-
-          <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Number of Security Employees" name = "securityEmps">
-          </div>
-
-          <div class="uk-margin">
-            <select class="uk-select" name = "language" id="create-language">
-              <option>Preferred Language</option>
-              <option></option>
-            </select>
-          </div>
-
-          <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Budget" name = "budget">
-          </div>
-
-          <input type = "submit" value = "save" class="uk-button uk-button-primary">
-
-        </form>
-      </div>
-    </li>
-  </ul>
-</div>
-
-
-<div class="center_profile top_margin center_text" id="company-div" hidden>
-  <div class="uk-margin">
-
-    <ul uk-accordion> <!-- This accordion opens the already saved company info -->
-      <li class="uk-open">
-        <h3 class="uk-accordion-title">Company Info </h3>
-          <div class="uk-accordion-content">
-              <div>
-                  <!-- This is the profile information that is already saved and should be displayed -->
-                  <table class="profile_table">
-                    <tr><td class="text_right_align">Name</td><td id="company-name" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="name"></td></tr>
-                    <tr>
-                        <td class="text_right_align">Country</td>
-                        <td id="company-country" class="text_left_align">
-                            <select class="uk-select no_field" name="country" disabled>
-                                <option></option>
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="Company Name" name="name">
+                        </div>
+                        <div class="uk-margin">
+                            <select class="uk-select" name="country" id="create-country">
+                                <option>Country</option>
                                 <option></option>
                             </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text_right_align">Industry</td>
-                        <td id="company-industry" class="text_left_align">
-                            <select class="uk-select no_field" name="industry" disabled>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text_right_align">Company Size</td>
-                        <td id="company-size" class="text_left_align">
-                            <select class="uk-select no_field" name="size" disabled>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr><td class="text_right_align">Security Employees</td><td id="company-securityEmps" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="securityEmps"></td></tr>
-                    <tr>
-                        <td class="text_right_align">Preferred Language</td>
-                        <td id="company-language" class="text_left_align">
-                            <select class="uk-select no_field" name="language" disabled>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr><td class="text_right_align">Budget</td><td id="company-budget" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="Budget"></td></tr>
+                        </div>
 
-<!--
-                      <tr><td class="text_right_align">Name</td><td id="company-name" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="name"></td></tr>
-                      <tr><td class="text_right_align">Industry</td><td id="company-industry" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="industry"></td></tr>
-                      <tr><td class="text_right_align">Country</td><td id="company-country" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="country"></td></tr>
-                      <tr><td class="text_right_align">Size</td><td id="company-size" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="size"></td></tr>
-                      <tr><td class="text_right_align">Security Employees</td><td id="company-securityEmps" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="securityEmps"></td></tr>
-                      <tr><td class="text_right_align">Language</td><td id="company-language" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="language"></td></tr>
--->
-                  </table>
-              </div>
-          </div>
+                        <div class="uk-margin">
+                            <select class="uk-select" name="industry" id="create-industry">
+                                <option>Industry</option>
+                                <option></option>
+                            </select>
+                        </div>
+
+                        <div class="uk-margin">
+                            <select class="uk-select" name="size" id="create-size">
+                                <option>Company Size</option>
+                                <option></option>
+                            </select>
+                        </div>
+
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="Number of Security Employees" name="securityEmps">
+                        </div>
+
+                        <div class="uk-margin">
+                            <select class="uk-select" name="language" id="create-language">
+                                <option>Preferred Language</option>
+                                <option></option>
+                            </select>
+                        </div>
+
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="Budget" name="budget">
+                        </div>
+
+                        <input type="submit" value="save" class="uk-button uk-button-primary">
+
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="center_profile top_margin center_text" id="company-div" hidden>
+        <div class="uk-margin">
+
+            <ul uk-accordion>
+                <!-- This accordion opens the already saved company info -->
+                <li class="uk-open">
+                    <h3 class="uk-accordion-title">Company Info </h3>
+                    <div class="uk-accordion-content">
+                        <div>
+                            <!-- This is the profile information that is already saved and should be displayed -->
+                            <form action="/company/edit" method="post" id="company-edit-form">
+                                <table class="profile_table">
+                                    <tr><td class="text_right_align">Name</td><td id="company-name" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="name"></td></tr>
+                                    <tr>
+                                        <td class="text_right_align">Country</td>
+                                        <td id="company-country" class="text_left_align">
+                                            <select class="uk-select no_field" name="country" disabled>
+                                                <option value="0"></option>
+                                                <option></option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_right_align">Industry</td>
+                                        <td id="company-industry" class="text_left_align">
+                                            <select class="uk-select no_field" name="industry" disabled>
+                                                <option value="0"></option>
+                                                <option></option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_right_align">Company Size</td>
+                                        <td id="company-size" class="text_left_align">
+                                            <select class="uk-select no_field" name="size" disabled>
+                                                <option value="0"></option>
+                                                <option></option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr><td class="text_right_align">Security Employees</td><td id="company-securityEmps" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="securityEmps"></td></tr>
+                                    <tr>
+                                        <td class="text_right_align">Preferred Language</td>
+                                        <td id="company-language" class="text_left_align">
+                                            <select class="uk-select no_field" name="language" disabled>
+                                                <option value="0"></option>
+                                                <option></option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr><td class="text_right_align">Budget</td><td id="company-budget" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="Budget"></td></tr>
+                                </table>
+                                <input type="submit" value="save" class="uk-button uk-button-primary uk-button-small b20width" hidden>
+                            </form>
+                            <button class="uk-button uk-button-primary uk-button-small b20width" id="company-edit-btn">Edit</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </li>
-    </ul>
-  </div>
-</div>
+    </div>
 
-<!-- give parent div of create form and company info display different IDs so that Abdalah can display -->
+    <!-- give parent div of create form and company info display different IDs so that Abdalah can display -->
 
 
 
