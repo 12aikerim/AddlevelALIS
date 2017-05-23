@@ -1,8 +1,4 @@
 /* Center div */
-.adina {
-  background-color: red;
-}
-
 .center_div{
   margin-left: 40%;
   margin-right: 0%;
@@ -25,7 +21,6 @@ h4.question_number{
   color: #565656;
   font-size: 25px;
 }
-
 
 h5.alert_message_title{
   color: #565656;
@@ -61,8 +56,9 @@ margin-left: 40%;
 margin-right: 0%;
 }
 p{
-
     text-emphasis-color: dodgerblue;
+}
 
+.navlink {
 
 }
