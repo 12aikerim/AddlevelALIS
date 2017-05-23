@@ -1,19 +1,69 @@
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-body {
-    margin: 0 0 100px; /* bottom = footer height */
-    
-}
-
+/* ==========================================================================
+footer section
+========================================================================== */
 footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 10s0px;
-    width: 100%;
-    overflow:hidden;
-    background-color: #0081c3;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: #011b25;
+  height: 30px;
+}
+footer p {
+  padding-top: 20px;
+
+}
+.addlevelLogo {
+  width: 100px;
+}
+.sitemap {
+  float: right;
+}
+.sitemap li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 0 0 10px;
+}
+.sitemap li a {
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.09);
+  color: #808080;
+  font-size: 15px;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+.sitemap li a:hover {
+  color: #0093d0;
+}
+.social-icon {
+  padding: 0;
+  margin: 0;
+}
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+  padding: 6px;
+}
+.social-icon li a {
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.09);
+  color: #808080;
+  font-size: 20px;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+.social-icon li a:hover {
+  color: #0093d0;
+}
+
+@media screen and (min-width: 992px) {
+  @-moz-document url-prefix() {
+    #portfolio .col-lg-4,
+    #portfolio .col-md-4 {
+      width: 33.333%;
+    }
+  }
 }

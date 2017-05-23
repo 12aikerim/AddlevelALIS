@@ -1,11 +1,16 @@
 .navbar {
   background-color: #0093d0;
 }
-
-.navbar-brand {
-  font-weight: bold;
+.uk-navbar-container {
+  background-color: #0093d0;
+  height: 70px;
 }
-
+.addlevelLogo {
+  width: 100px;
+}
+.navbar-header{
+  vertical-align: middle;
+}
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 color: #000;  /*Sets the text hover color on navbar*/
 }
@@ -33,8 +38,6 @@ background-color: #0093d0;
     text-decoration: none;
     background-color: #0093d0; /*Change rollover cell color here*/
   }
-
-
 
  .navbar-default .navbar-nav > li > a {
    color: white; /*Change active text color here*/

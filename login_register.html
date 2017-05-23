@@ -6,7 +6,9 @@
   <head>
     <meta charset="UTF-8">
     <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
+
     <!-- jQuery is required -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/login_register.js"></script>
@@ -14,8 +16,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css"/>
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <img src="img/addlevel_logo_white_trans.svg" class="addlevelLogo">
+        </div>
+      </div>
+    </nav>
+
     <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
       <div>
         <div class="center_div top_center_div center_text">
@@ -41,7 +52,7 @@
               <input type="submit" class="uk-button uk-button-primary" value="submit"/>
               <br>
               <br>
-              <label><input class="uk-checkbox" type="checkbox" name="rememberme" value="true">Remember Me</label>
+              <label><input class="uk-checkbox" type="checkbox" name="rememberme" value="true"> Remember Me</label>
             </fieldset>
           </form>
         </div>
