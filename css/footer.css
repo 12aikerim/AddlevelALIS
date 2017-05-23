@@ -14,8 +14,10 @@ footer p {
 .addlevelLogo {
   width: 120px;
 }
+
 .sitemap {
   float: right;
+  vertical-align: middle;
 }
 .sitemap li {
   list-style: none;
@@ -33,6 +35,7 @@ footer p {
 .sitemap li a:hover {
   color: #0093d0;
 }
+
 .social-icon {
   padding: 0;
   margin: 0;
