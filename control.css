@@ -1,3 +1,17 @@
+.card_header{
+  height: 70px;
+  background-color: #0081c3;
+}
+
+.card_body{
+  height: 160px;
+}
+
+.card_grid_margin{
+  margin: 40px 40px 40px 40px;
+}
+
+
 html {
     position: relative;
     min-height: 100%;
@@ -24,6 +38,7 @@ footer {
 
 #padding_top_logo{
   padding-top: 15px;
+  padding-bottom: 7px;
 }
 
 /* Footer */
