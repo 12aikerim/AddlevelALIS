@@ -1,10 +1,231 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-    <script type="text/javascript" src="js/question_table.js"></script>
-</head>
-<body>
+	<meta charset="utf-8">
+	<title>Addlevel</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-</body>
-</html>
+	<!-- Framework -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/framework.css">
+	<link rel="stylesheet" href="css/question_table.css"/>
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<!-- Script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit-icons.min.js"></script>
+
+</head>
+
+<body>
+	<!-- navigation section -->
+	<nav class="uk-navbar-container" uk-navbar>
+
+		<div class="uk-navbar-left">
+
+			<ul class="uk-navbar-nav">
+				<li class="uk-active"><a href="#">Active</a></li>
+				<li>
+					<a href="#">Parent</a>
+					<div class="uk-navbar-dropdown">
+						<ul class="uk-nav uk-navbar-dropdown-nav">
+							<li class="uk-active"><a href="#">Active</a></li>
+							<li><a href="#">Item</a></li>
+							<li><a href="#">Item</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">Item</a></li>
+			</ul>
+
+		</div>
+
+		<div class="uk-navbar-right">
+
+			<ul class="uk-navbar-nav">
+				<li class="uk-active"><a href="#">Active</a></li>
+				<li>
+					<a href="#">Parent</a>
+					<div class="uk-navbar-dropdown">
+						<ul class="uk-nav uk-navbar-dropdown-nav">
+							<li class="uk-active"><a href="#">Active</a></li>
+							<li><a href="#">Item</a></li>
+							<li><a href="#">Item</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">Item</a></li>
+			</ul>
+
+		</div>
+
+	</nav>
+
+	<!-- table -->
+	<div class="app-dashboard-body off-canvas-wrapper">
+
+		<div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium" data-off-canvas>
+
+			<div class="app-dashboard-sidebar-title-area">
+				<h5 class="app-dashboard-sidebar-block-title">Questionnaire</h5>
+			</div>
+
+			<div class="app-dashboard-sidebar-inner">
+				<ul style="list-style: none;">
+					<li><a href="#">Question 1</a></li>
+					<li><a href="#">Question 2</a></li>
+					<li><a href="#">Question 3</a></li>
+					<li><a href="#">Question 4</a></li>
+					<li><a href="#">Question 5</a></li>
+					<li><a href="#">Question 6</a></li>
+					<li><a href="#">Question 7</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
+
+				<div class="row">
+					<div class="w3-container">
+						<br>
+
+						<div class="progress">
+							<div class="circle done">
+								<span class="label">1</span>
+								<span class="title">Control</span>
+							</div>
+							<span class="bar done"></span>
+							<div class="circle done">
+								<span class="label">2</span>
+								<span class="title">Control</span>
+							</div>
+							<span class="bar half"></span>
+							<div class="circle active">
+								<span class="label">3</span>
+								<span class="title">Control</span>
+							</div>
+							<span class="bar"></span>
+							<div class="circle">
+								<span class="label">..</span>
+								<span class="title">Press</span>
+							</div>
+							<span class="bar"></span>
+							<div class="circle">
+								<span class="label">10</span>
+								<span class="title">Control</span>
+							</div>
+						</div>
+
+
+						<div class="w3-light-grey">
+							<div class="w3-container w3-blue" style="width:75%">75%</div>
+						</div>
+					<!-- table -->
+					<table>
+						<thead>
+							<tr>
+								<th>Number</th>
+								<th>Description</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>1</strong></td>
+								<td>Servivce Control............</td>
+								<td>
+									<span class="uk-margin-small-right" uk-icon="icon: check" style="color:green"href="#modal-table" uk-toggle></span>
+
+									<div id="modal-table" uk-modal="center: true">
+										<div class="uk-modal-dialog">
+											<button class="uk-modal-close-default" type="button" uk-close></button>
+											<table class="uk-table">
+												<thead>
+													<tr>
+														<th>Control Name </th>
+													</tr>
+												</thead>
+												<tr>
+													<td>Recommendation</td>
+												</tr>
+
+												<tbody>
+													<tr>
+														<td>Question- whole sentence</td>
+													</tr>
+													<tr>
+														<td>Your Answer</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><strong>2</strong></td>
+								<td>Consulting.....................</td>
+								<td>
+									<span class="uk-margin-small-right" uk-icon="icon: minus-circle"style="color:red" href ="#modal-caption"uk-toggle></span>
+									<div id="modal-caption" uk-modal="center: true">
+										<div class="uk-modal-dialog">
+											<button class="uk-modal-close-default" type="button" uk-close></button>
+											<q>You need to complete the question to see the recommendations.</p>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+		<!-- footer section -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<img src="images/addlevel_logo_white_trans.svg" class="addlevelLogo">
+					</div>
+					<div class="col-sm-4">
+						<ul class="sitemap">
+							<li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">FAQ</a></li>
+							<li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">Questions</a></li>
+							<li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">MyProfile</a></li>
+							<li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">Contact</a></li>
+						</ul></div>
+						<div class="col-sm-6">
+							<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="0.9s"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</body>
+
+		</html>

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 	$('#login-form').on('submit', function(e) {
 		e.preventDefault();
 
@@ -9,8 +9,8 @@ $(document).ready(function() {
 			success: function(data, textStatus, jqxhr) {
 				window.location.href = '/client-dashboard.html';
 			},
-			error: function(jqXHR, textStatus, errorThrown) {
-				var errors = jqXHR.responseJSON;
+            error: function (jqxhr, textStatus, errorThrown) {
+                var errors = jqxhr.responseJSON;
 				msg = "Errors:\n";
 				for (var key in errors) {
 					msg += key + ": " + errors[key][0] + '\n';
@@ -33,9 +33,9 @@ $(document).ready(function() {
 				alert("Please check your email for verification email");
 				window.location.href = '/client-dashboard.html';
 			},
-			error: function(jqXHR, textStatus, errorThrown) {
+			error: function(jqxhr, textStatus, errorThrown) {
 				// todo: display errors
-				var errors = jqXHR.responseJSON;
+				var errors = jqxhr.responseJSON;
 				msg = "Errors:\n";
 				for (var key in errors) {
 					msg += key + ": " + errors[key][0] + '\n';
@@ -49,12 +49,7 @@ $(document).ready(function() {
 		url: siteRoot + '/constant/positions',
 		type: 'get',
 		success: function(data, textStatus, jqxhr) {
-			pos = data.positions;
-			var html = "";
-			$.each(pos, function(idx, obj) {
-				html += "<option value=\"" + obj.id + "\">" + obj.title + "</option>\n";
-			});
-			$('#register-position').append(html);
+            $('#register-position').append(create_options(data));
 		}
 	});
 });

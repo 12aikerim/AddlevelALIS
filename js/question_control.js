@@ -36,7 +36,8 @@ $(document).ready(function () {
             alert("This control is not included in your current plan.\nIf you wish to utilize this control, please consider upgrading your plan.");
         else {
             var id = $('input[type=hidden]', this).val();
-            document.location.href = "/question_table.html?controlId=" + id;
+            sessionStorage.setItem('controlId', id);
+            document.location.href = "/question_table.html";
         }
 
     });

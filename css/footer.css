@@ -7,28 +7,32 @@ footer {
   padding-bottom: 70px;
   background-color: #011b25;
   height: 30px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 footer p {
   padding-top: 20px;
-
 }
 .addlevelLogo {
-  width: 100px;
+  width: 120px;
 }
+
 .sitemap {
   float: right;
+  vertical-align: middle;
 }
 .sitemap li {
   list-style: none;
   display: inline-block;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 15px;
 }
 .sitemap li a {
   box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.09);
   color: #808080;
   font-size: 15px;
-  width: 56px;
-  height: 56px;
   text-align: center;
   text-decoration: none;
   transition: all 0.4s ease-in-out;
@@ -36,6 +40,7 @@ footer p {
 .sitemap li a:hover {
   color: #0093d0;
 }
+
 .social-icon {
   padding: 0;
   margin: 0;
@@ -57,13 +62,4 @@ footer p {
 }
 .social-icon li a:hover {
   color: #0093d0;
-}
-
-@media screen and (min-width: 992px) {
-  @-moz-document url-prefix() {
-    #portfolio .col-lg-4,
-    #portfolio .col-md-4 {
-      width: 33.333%;
-    }
-  }
 }

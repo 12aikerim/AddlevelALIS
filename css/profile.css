@@ -1,4 +1,27 @@
-/* Login Register */
+.profile_table {
+    width: 100%;
+}
+
+.profile_table .text_right_align {
+    padding-right: 20px;
+    width: 50%;
+}
+
+.profile_table .text_left_align {
+    padding-left: 20px;
+}
+
+.no_field {
+    border: none;
+    background-color: #fff !important;
+    color: #666 !important;
+}
+
+.b20width {
+    width: 20%;
+}
+
+
 
 .center_div{
   margin-left: 10%;
