@@ -28,62 +28,86 @@
 
 <body>
 
-  <div class="row">
-    <div class="uk-button-group uk-align-right">
-      <button class="uk-button uk-button-small uk-button-secondary">Save & Exit</button>
+  <div class="app-dashboard-body off-canvas-wrapper">
+
+    <div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium" data-off-canvas>
+
+      <div class="app-dashboard-sidebar-title-area">
+        <h5 class="app-dashboard-sidebar-block-title">Questionnaire</h5>
+      </div>
+
+      <div class="app-dashboard-sidebar-inner">
+            <ul style="list-style: none;">
+              <li><a href="#">Question 1</a></li>
+              <li><a href="#">Question 2</a></li>
+              <li><a href="#">Question 3</a></li>
+              <li><a href="#">Question 4</a></li>
+              <li><a href="#">Question 5</a></li>
+              <li><a href="#">Question 6</a></li>
+              <li><a href="#">Question 7</a></li>
+            </ul>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-12">
-      <span><h1 class = "question_number" id = "question-title"></h1></span>
-      <span><h5 class = "question_text" id = "question-text"></h5></span>
-      <form>
-        <div class="col-sm-12 col-md-12">
-          <span>
-            <div id = "question-options">
+      <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
+        <div class="row">
+          <div class="uk-button-group uk-align-right">
+            <button class="uk-button uk-button-small uk-button-secondary">Save & Exit</button>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="col-md-12">
+            <span><h1 class = "question_number" id = "question-title"></h1></span>
+            <span><h5 class = "question_text" id = "question-text"></h5></span>
+            <form>
+              <div class="col-sm-12 col-md-12">
+                <span>
+                  <div id = "question-options">
+
+                  </div>
+
+                  <!--        <div class="radio">
+                  <input type="radio" name="gridRadios1" id="checkrads_11">
+                  <label for="checkrads_11">Definitely yes</label>
+                </div>
+                <div class="radio">
+                <input type="radio" name="gridRadios1" id="checkrads_12">
+                <label for="checkrads_12">Probably yes</label>
+              </div>
+              <div class="radio">
+              <input type="radio" name="gridRadios1" id="checkrads_13">
+              <label for="checkrads_13">Might or might not</label>
             </div>
-
-            <!--        <div class="radio">
-            <input type="radio" name="gridRadios1" id="checkrads_11">
-            <label for="checkrads_11">Definitely yes</label>
+            <div class="radio">
+            <input type="radio" name="gridRadios1" id="checkrads_14">
+            <label for="checkrads_14">Probably not</label>
           </div>
           <div class="radio">
-          <input type="radio" name="gridRadios1" id="checkrads_12">
-          <label for="checkrads_12">Probably yes</label>
-        </div>
-        <div class="radio">
-        <input type="radio" name="gridRadios1" id="checkrads_13">
-        <label for="checkrads_13">Might or might not</label>
-      </div>
-      <div class="radio">
-      <input type="radio" name="gridRadios1" id="checkrads_14">
-      <label for="checkrads_14">Probably not</label>
+          <input type="radio" name="gridRadios1" id="checkrads_15">
+          <label for="checkrads_15">Definitely not</label>
+        </div>-->
+      </span>
     </div>
-    <div class="radio">
-    <input type="radio" name="gridRadios1" id="checkrads_15">
-    <label for="checkrads_15">Definitely not</label>
-  </div>-->
-</span>
-</div>
 
-<div class="col-md-12">
-  <div class="uk-alert-primary" uk-alert>
-    <a class="uk-alert-close" uk-close></a>
-    <p> <ul><a href = ""></a></ul></p>
+    <div class="col-md-12">
+      <div class="uk-alert-primary" uk-alert>
+        <a class="uk-alert-close" uk-close></a>
+        <p> <ul><a href = ""></a></ul></p>
+      </div>
+    </div>
+
+    <progress id="progress-bar" class="uk-progress" value="" max="100"></progress>
+
+    <div class="progressnumber">
+      <a href="#" class="uk-slidenav-large" id = "question-previous" uk-slidenav-previous></a>
+      <span id = "question-count"></span>
+      <a href="#" class="uk-slidenav-large" id = "question-next" uk-slidenav-next></a>
+    </div>
   </div>
-</div>
-
-<progress id="progress-bar" class="uk-progress" value="" max="100"></progress>
-
-<div class="progressnumber">
-  <a href="#" class="uk-slidenav-large" id = "question-previous" uk-slidenav-previous></a>
-  <span id = "question-count"></span>
-  <a href="#" class="uk-slidenav-large" id = "question-next" uk-slidenav-next></a>
-</div>
-</div>
 </form>
+</div>
+</div>
 </div>
 
 <!-- footer section -->
