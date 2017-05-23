@@ -76,6 +76,6 @@ button {
   height: 50px;
 }
 
-.app-dashboard-sidebar-inner {
+.app-dashboard-sidebar .app-dashboard-sidebar-inner {
   height: calc(100% - 50px);
 }
