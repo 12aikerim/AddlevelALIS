@@ -8,7 +8,7 @@
             $('#profile-email').find('input').val(data.email);
             $('#profile-phone').find('input').val(data.phone);
             $('#profile-position').find('select').find('option').first().html(data.position);
-            $('#profile-div').removeAttr('hidden');/*Need to change this ~Vinay */
+            $('#profile-div').removeAttr('hidden');
         }
     });
 
@@ -51,17 +51,14 @@
                     }
                 });
             } else {
-              /*   $('#profile-fname').find('input').val(data.firstName);   */
-                $('#company-div').removeAttr('hidden');
                 $('#company-name').find('input').val(co.name);
-                $('#company-industry').find('input').val(co.industry);
-                $('#company-country').find('input').val(co.country);
-                $('#company-size').find('input').val(co.size);
+                $('#company-industry').find('select').find('option').first().html(co.industry);
+                $('#company-country').find('select').find('option').first().html(co.country);
+                $('#company-size').find('select').find('option').first().html(co.size);
                 $('#company-securityEmps').find('input').val(co.securityEmps);
-                $('#company-language').find('input').val(co.language);
-
-
-                console.log(co);
+                $('#company-language').find('select').find('option').first().html(co.language);
+                $('#company-budget').find('input').val(co.budget);
+                $('#company-div').removeAttr('hidden');
             }
         },
         error: function (jqxhr, textStatus, errorThrown) {
