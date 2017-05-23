@@ -1,0 +1,65 @@
+/* Login Register */
+
+.center_div{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.register-side_margins{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.center_div_full_width{
+  margin-left: 40%; /* It wouldn't center for some reason */
+  margin-right: 30%;
+}
+
+.left_align{
+  margin-right: 50%;
+}
+
+.bold_text{
+  text-decoration: bold;
+}
+
+.bottom_margin{
+  margin-bottom: auto;
+}
+
+.top_margin{
+  margin-top: 50px;
+}
+
+.center_text{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.top_margin_title{
+  margin-top: 10%;
+  margin-bottom: 30%;
+}
+
+.row{
+  display:inline-block;
+
+}
+#underline{
+  text-decoration: underline;
+}
+
+/* Profile */
+
+.center_profile{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.text_left_align{
+  text-align: left;
+}
+
+.text_right_align{
+  text-align: right;
+}

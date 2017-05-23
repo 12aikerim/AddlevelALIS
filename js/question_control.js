@@ -1,5 +1,3 @@
-siteRoot = 'http://localhost:61071'
-
 function create_control(data) {
     var control =
         '<div>' +
@@ -41,5 +39,5 @@ $(document).ready(function () {
             document.location.href = "/question_table.html?controlId=" + id;
         }
 
-    })
+    });
 });

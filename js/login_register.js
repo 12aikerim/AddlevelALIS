@@ -1,5 +1,3 @@
-siteRoot = 'http://localhost:61071'
-
 $(document).ready(function() {
 	$('#login-form').on('submit', function(e) {
 		e.preventDefault();
