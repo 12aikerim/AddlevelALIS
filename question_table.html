@@ -12,6 +12,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/app.css">
 	<link rel="stylesheet" href="css/foundation.css">
 	<link rel="stylesheet" href="css/framework.css">
 	<link rel="stylesheet" href="css/question_table.css"/>
@@ -23,76 +24,26 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit-icons.min.js"></script>
+	<script type="text/javascript" src="js/question_table.js"></script>
 
 </head>
 
 <body>
-	<!-- navigation section -->
-	<nav class="uk-navbar-container" uk-navbar>
 
-		<div class="uk-navbar-left">
+<div class="row">
+	<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body">ItemItemItemItemItemItemItemItemItemItemItem</div>
+	    </div>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body">Item</div>
+	    </div>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body">Item</div>
+	    </div>
+	</div>
 
-			<ul class="uk-navbar-nav">
-				<li class="uk-active"><a href="#">Active</a></li>
-				<li>
-					<a href="#">Parent</a>
-					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav">
-							<li class="uk-active"><a href="#">Active</a></li>
-							<li><a href="#">Item</a></li>
-							<li><a href="#">Item</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="#">Item</a></li>
-			</ul>
-
-		</div>
-
-		<div class="uk-navbar-right">
-
-			<ul class="uk-navbar-nav">
-				<li class="uk-active"><a href="#">Active</a></li>
-				<li>
-					<a href="#">Parent</a>
-					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav">
-							<li class="uk-active"><a href="#">Active</a></li>
-							<li><a href="#">Item</a></li>
-							<li><a href="#">Item</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="#">Item</a></li>
-			</ul>
-
-		</div>
-
-	</nav>
-
-	<!-- table -->
-	<div class="app-dashboard-body off-canvas-wrapper">
-
-		<div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium" data-off-canvas>
-
-			<div class="app-dashboard-sidebar-title-area">
-				<h5 class="app-dashboard-sidebar-block-title">Questionnaire</h5>
-			</div>
-
-			<div class="app-dashboard-sidebar-inner">
-				<ul style="list-style: none;">
-					<li><a href="#">Question 1</a></li>
-					<li><a href="#">Question 2</a></li>
-					<li><a href="#">Question 3</a></li>
-					<li><a href="#">Question 4</a></li>
-					<li><a href="#">Question 5</a></li>
-					<li><a href="#">Question 6</a></li>
-					<li><a href="#">Question 7</a></li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
+</div>
 
 				<div class="row">
 					<div class="w3-container">
@@ -190,42 +141,11 @@
 						</tbody>
 					</table>
 				</div>
-			</div>
-		</div>
 
-
-
-
-
-
-
-
-		<!-- footer section -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-						<img src="images/addlevel_logo_white_trans.svg" class="addlevelLogo">
-					</div>
-					<div class="col-sm-4">
-						<ul class="sitemap">
-							<li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">FAQ</a></li>
-							<li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">Questions</a></li>
-							<li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">MyProfile</a></li>
-							<li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">Contact</a></li>
-						</ul></div>
-						<div class="col-sm-6">
-							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
-								<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
-								<li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="0.9s"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</body>
-
-		</html>
+			<!--Script-->
+			<script src="js/vendor/jquery.js"></script>
+			<script src="js/vendor/what-input.js"></script>
+			<script src="js/vendor/foundation.js"></script>
+			<script src="js/app.js"></script>
+	</body>
+</html>
