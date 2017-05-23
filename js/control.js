@@ -4,10 +4,11 @@ function create_control(data) {
     var control =
         '<div>' +
         '<div class="uk-card uk-card-default' + (!data.included ? ' disabled_card' : '') + '">' +
-        '<div class="uk-card-header">' +
+        '<div class="uk-card-header card_header">' +
         '</div>' +
-        '<div class="uk-card-body"' +
-        '<h3 class="uk-card-title">' + data.title + '</h3>' +
+        '<div class="uk-card-body card_body">' +
+        '<h4 class="uk-card-title">' + data.title + '</h4>' +
+        '<p class="card_body_bottom">' + data.count + ' questions</p>' +
         '<input type="hidden" value="' + data.id + '">' +
         '</div>' +
         '<div class="uk-card-footer">' +

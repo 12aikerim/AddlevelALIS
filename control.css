@@ -4,7 +4,15 @@
 }
 
 .card_body{
-  height: 160px;
+  min-height: 250px;
+  position: relative;
+}
+
+.card_body_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .card_grid_margin{
