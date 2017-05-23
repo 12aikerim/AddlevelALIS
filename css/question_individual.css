@@ -57,10 +57,25 @@ h5.alert_message_subtitle{
 .app-dashboard-body-content {
   width: 50%;
 }
+
 p{
     text-emphasis-color: dodgerblue;
 }
 
 button {
   width: 120px;
+}
+
+.app-dashboard-sidebar {
+  position: fixed;
+  z-index: 0;
+  height: calc(100% - 130px);
+}
+
+.app-dashboard-sidebar-title-area {
+  height: 10%;
+}
+
+.app-dashboard-sidebar-inner {
+  height: 80%;
 }
