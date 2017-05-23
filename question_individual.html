@@ -1,250 +1,105 @@
-<!doctype html>
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project ALIS</title>
+	<meta charset="utf-8">
+	<title>Addlevel</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Framework -->
-  <link rel="stylesheet" href="common/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="common/uikit-3.0.0-beta.23/css/uikit.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="common/font-awesome-4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/framework.css">
   <link rel="stylesheet" href="css/navigation.css">
-  <link rel="stylesheet" href="css/footer.css"/>
-  <link rel="stylesheet" href="css/question_individual.css"/>
+	<link rel="stylesheet" href="css/footer.css">
 
   <!-- Script -->
-  <script type="text/javascript" src="common/uikit-3.0.0-beta.23/js/uikit.min.js"></script>
-  <script type="text/javascript" src="common/uikit-3.0.0-beta.23/js/uikit-icons.min.js"></script>
-  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit-icons.min.js"></script>
   <script type="text/javascript" src="js/question_individual.js"></script>
 </head>
 
 <body>
 
-  <!--
-  <nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-      <div class="navbar-header">
-        <img src="img/addlevel_logo_white_trans.svg" class="uk-logo addlevelLogo">
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav uk-subnav" uk-margin>
-          <li><a class="navlink uk-animation-fade" href="#">Dashboard</a></li>
-          <li><a class="navlink uk-animation-fade" href="#">FAQ</a></li>
-          <li><a class="navlink uk-animation-fade" href="#">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a class="dropdown-toggle uk-animation-fade" data-toggle="dropdown" href="#">Client@addlevel.se<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Logout</a></li>
-            </ul>
-          </li>
-
-          <div class="uk-inline">
-            <button class="uk-button uk-button-default" type="button">Click</button>
-            <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-          </div>
-        </ul>
-      </div>
-    </div>
-  </nav>
--->
-
-
-  <nav class="uk-navbar-container" uk-navbar>
-
-      <div class="uk-navbar-left">
-
-          <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="#">Active</a></li>
-              <li>
-                  <a href="#">Parent</a>
-                  <div class="uk-navbar-dropdown">
-                      <ul class="uk-nav uk-navbar-dropdown-nav">
-                          <li class="uk-active"><a href="#">Active</a></li>
-                          <li><a href="#">Item</a></li>
-                          <li><a href="#">Item</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li><a href="#">Item</a></li>
-          </ul>
-
-      </div>
-
-      <div class="uk-navbar-right">
-
-          <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="#">Active</a></li>
-              <li>
-                  <a href="#">Parent</a>
-                  <div class="uk-navbar-dropdown">
-                      <ul class="uk-nav uk-navbar-dropdown-nav">
-                          <li class="uk-active"><a href="#">Active</a></li>
-                          <li><a href="#">Item</a></li>
-                          <li><a href="#">Item</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li><a href="#">Item</a></li>
-          </ul>
-
-      </div>
-
-  </nav>
-
-
-  <div class="app-dashboard-body off-canvas-wrapper">
-    <div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium" data-off-canvas>
-      <div class="app-dashboard-sidebar-title-area">
-        <h5 class="app-dashboard-sidebar-block-title">Questionnaire</h5>
-      </div>
-      <div class="app-dashboard-sidebar-inner">
-        <ul class="vertical menu" data-accordion-menu>
-          <li>
-            <a href="#">Control #1</a>
-            <ul class="menu vertical nested">
-              <li><a href="#">Question 1</a></li>
-              <li><a href="#">Question 2</a></li>
-              <li><a href="#">Question 3</a></li>
-              <li><a href="#">Question 4</a></li>
-              <li><a href="#">Question 5</a></li>
-              <li><a href="#">Question 6</a></li>
-              <li><a href="#">Question 7</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Control #2</a>
-            <ul class="menu vertical nested">
-              <li><a href="#">Question 1</a></li>
-              <li><a href="#">Question 2</a></li>
-              <li><a href="#">Question 3</a></li>
-              <li><a href="#">Question 4</a></li>
-              <li><a href="#">Question 5</a></li>
-              <li><a href="#">Question 6</a></li>
-              <li><a href="#">Question 7</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Control #3</a>
-            <ul class="menu vertical nested">
-              <li><a href="#">Question 1</a></li>
-              <li><a href="#">Question 2</a></li>
-              <li><a href="#">Question 3</a></li>
-              <li><a href="#">Question 4</a></li>
-              <li><a href="#">Question 5</a></li>
-              <li><a href="#">Question 6</a></li>
-              <li><a href="#">Question 7</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Control #4</a>
-            <ul class="menu vertical nested">
-              <li><a href="#">Question 1</a></li>
-              <li><a href="#">Question 2</a></li>
-              <li><a href="#">Question 3</a></li>
-              <li><a href="#">Question 4</a></li>
-              <li><a href="#">Question 5</a></li>
-              <li><a href="#">Question 6</a></li>
-              <li><a href="#">Question 7</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-
-
-
-    <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
-      <div class="row">
-        <div class="uk-button-group uk-align-right">
-          <button class="uk-button uk-button-small button_save uk-button-primary">Previous</button>
-          <button class="uk-button uk-button-small uk-button-secondary">Save & Exit</button>
-          <button class="uk-button uk-button-small uk-button-primary">Next</button>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-md-12">
-          <span><h1 class = "question_number"> Question 1 </h1></span>
-          <span><h5 class = "question_text">Do you prevent unapproved software from being executed, for example, through whitelisting of applications?</h5></span>
-          <form>
-            <div class="col-sm-12 col-md-12">
-              <span>
-                <div class="radio">
-                  <input type="radio" name="gridRadios1" id="checkrads_11">
-                  <label for="checkrads_11">Definitely yes</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="gridRadios1" id="checkrads_12">
-                  <label for="checkrads_12">Probably yes</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="gridRadios1" id="checkrads_13">
-                  <label for="checkrads_13">Might or might not</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="gridRadios1" id="checkrads_14">
-                  <label for="checkrads_14">Probably not</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="gridRadios1" id="checkrads_15">
-                  <label for="checkrads_15">Definitely not</label>
-                </div>
-              </span>
-            </div>
-
-            <div class="col-md-12">
-              <div class="uk-alert-primary" uk-alert>
-                <a class="uk-alert-close" uk-close></a>
-                <p> IT Security and Risk Management.</p>
-                <h5> Follow the link for more information on the context of the question </h5>
-              </div>
-            </div>
-
-
-
-
-
-            <progress id="progressbar" class="uk-progress" value="1" max="100"></progress>
-
-            <script>
-
-            jQuery(function () {
-
-              var animate = setInterval(function () {
-
-                window.progressbar && (progressbar.value += 10);
-
-                if (!window.progressbar || progressbar.value >= progressbar.max) {
-                  clearInterval(animate);
-                }
-              }, 1000);
-            });
-
-            </script>
-            <div class="progressnumber">
-              <a href="#" class="uk-slidenav-large" uk-slidenav-previous></a>
-              <span>1/1</span>
-              <a href="#" class="uk-slidenav-large" uk-slidenav-next></a>
-            </div>
-          </div>
-
-        </form>
-      </div>
+  <div class="row">
+    <div class="uk-button-group uk-align-right">
+      <button class="uk-button uk-button-small button_save uk-button-primary">Previous</button>
+      <button class="uk-button uk-button-small uk-button-secondary">Save & Exit</button>
+      <button class="uk-button uk-button-small uk-button-primary">Next</button>
     </div>
   </div>
 
+  <div class="row">
+    <div class="col-md-12">
+      <span><h1 class = "question_number"> Question 1 </h1></span>
+      <span><h5 class = "question_text">Do you prevent unapproved software from being executed, for example, through whitelisting of applications?</h5></span>
+      <form>
+        <div class="col-sm-12 col-md-12">
+          <span>
+            <div class="radio">
+              <input type="radio" name="gridRadios1" id="checkrads_11">
+              <label for="checkrads_11">Definitely yes</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="gridRadios1" id="checkrads_12">
+              <label for="checkrads_12">Probably yes</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="gridRadios1" id="checkrads_13">
+              <label for="checkrads_13">Might or might not</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="gridRadios1" id="checkrads_14">
+              <label for="checkrads_14">Probably not</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="gridRadios1" id="checkrads_15">
+              <label for="checkrads_15">Definitely not</label>
+            </div>
+          </span>
+        </div>
+
+        <div class="col-md-12">
+          <div class="uk-alert-primary" uk-alert>
+            <a class="uk-alert-close" uk-close></a>
+            <p> IT Security and Risk Management.</p>
+            <h5> Follow the link for more information on the context of the question </h5>
+          </div>
+        </div>
+
+        <progress id="progressbar" class="uk-progress" value="1" max="100"></progress>
+
+        <script>
+
+        jQuery(function () {
+
+          var animate = setInterval(function () {
+
+            window.progressbar && (progressbar.value += 10);
+
+            if (!window.progressbar || progressbar.value >= progressbar.max) {
+              clearInterval(animate);
+            }
+          }, 1000);
+        });
+
+        </script>
+        <div class="progressnumber">
+          <a href="#" class="uk-slidenav-large" uk-slidenav-previous></a>
+          <span>1/1</span>
+          <a href="#" class="uk-slidenav-large" uk-slidenav-next></a>
+        </div>
+      </div>
+
+    </form>
+  </div>
 
   <!-- footer section -->
   <footer>
