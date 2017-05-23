@@ -7,7 +7,7 @@ footer {
   padding-bottom: 70px;
   background-color: #011b25;
   height: 30px;
-  position: absolute;
+  position: static;
   bottom: 0;
   width: 100%
 }
