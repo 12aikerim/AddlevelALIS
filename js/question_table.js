@@ -4,7 +4,7 @@ $(document).ready(function () {
         url: siteRoot + '/question/questions?controlId=' + controlId,
         type: 'get',
         success: function (data, textStatus, jqxhr) {
-            localStorage.setItem('control-questions', jqxhr.responseText)
+            localStorage.setItem('control-questions', jqxhr.responseText);
         }
     });
 });

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 
 <!-- ================================-->
@@ -13,16 +13,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
   <!-- jQuery is required -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/profile.js"></script>
   <!-- UIkit JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit-icons.min.js"></script>
   <link rel="stylesheet" href="css/profile.css">
-  <script src="dist/bundle.js"></script>
 
 </head>
 <body>
 
-  <div class="center_profile top_margin center_text">
+  <div class="center_profile top_margin center_text" id="profile-div" hidden>
       <div class="uk-margin">
         <div class="uk-inline">
           <legend class="uk-legend">Profile</legend>
@@ -30,80 +31,44 @@
       </div>
 
 
-    <div id = "display_company_form"> <!-- This is the profile information that is already saved and should be displayed -->
-        <div class="uk-column-1-2">
-          <div id = "company_country" class = "text_right_align">
-            First Name:
-          </div>
-          <div id = "company_industry" class = "text_right_align">
-            Last Name:
-          </div>
-          <div id = "company_size" class = "text_right_align">
-            Email:
-          </div>
-          <div id = "company_securityemployees" class = "text_right_align">
-            Phone:
-          </div>
-
-          <div id = "profile-fname" class = "text_left_align">
-            FirstName
-          </div>
-          <div id = "profile-lname" class = "text_left_align">
-            LastName
-          </div>
-          <div id = "profile-email" class = "text_left_align">
-            EmailAddress
-          </div>
-          <div id = "profile-phone" class = "text_left_align">
-            PhoneNumber
-          </div>
-        </div>
-    </div>
+    <div><!-- This is the profile information that is already saved and should be displayed -->
+      <table class="profile_table">
+          <tr><td class="text_right_align">First Name</td><td id="profile-fname" class="text_left_align"></td></tr>
+          <tr><td class="text_right_align">Last Name</td><td id="profile-lname" class="text_left_align"></td></tr>
+          <tr><td class="text_right_align">Email</td><td id="profile-email" class="text_left_align"></td></tr>
+          <tr><td class="text_right_align">Phone</td><td id="profile-phone" class="text_left_align"></td></tr>
+          <tr><td class="text_right_align">Position</td><td id="profile-position" class="text_left_align"></td></tr>
+      </table></div>
   </div>
 
-<div class="center_profile top_margin center_text">
-  <ul uk-accordion id = "create_company_accordion"> <!-- The accordion to open the form to provide company information -->
+<div class="center_profile top_margin center_text" id = "create-div" hidden>
+  <ul uk-accordion> <!-- The accordion to open the form to provide company information -->
     <li class="uk-open">
-      <h3 class="uk-accordion-title">Company Info </h3>
+      <h3 class="uk-accordion-title">Company Info</h3>
       <div class="uk-accordion-content">
-        <form action="/company/create" method="post" id="register-form">
+        <form action="/company/create" method="post" id="create-form">
 
           <div class="uk-margin">
             <input class="uk-input" type="text" placeholder="Company Name" name = "name">
           </div>
           <div class="uk-margin">
-            <select class="uk-select" name = "country">
+            <select class="uk-select" name = "country" id="create-country">
               <option>Country</option>
               <option></option>
-              <option>Country 1</option>
-              <option>Country 2</option>
-              <option>Country 3</option>
-              <option>Country 4</option>
-              <option>Country 5</option>
             </select>
           </div>
 
           <div class="uk-margin">
-            <select class="uk-select" name = "industry size">
+            <select class="uk-select" name = "industry" id="create-industry">
               <option>Industry</option>
               <option></option>
-              <option>Industry 1</option>
-              <option>Industry 2</option>
-              <option>Industry 3</option>
-              <option>Industry 4</option>
-              <option>Industry 5</option>
             </select>
           </div>
 
           <div class="uk-margin">
-            <select class="uk-select" name = "size">
+            <select class="uk-select" name = "size" id="create-size">
               <option>Company Size</option>
               <option></option>
-              <option>Company Size 1</option>
-              <option>Company Size 2</option>
-              <option>Company Size 3</option>
-              <option>Company Size 4</option>
-              <option>Company Size 5</option>
             </select>
           </div>
 
@@ -112,14 +77,9 @@
           </div>
 
           <div class="uk-margin">
-            <select class="uk-select" name = "language">
+            <select class="uk-select" name = "language" id="create-language">
               <option>Preferred Language</option>
               <option></option>
-              <option>Preferred Language 1</option>
-              <option>Preferred Language 2</option>
-              <option>Preferred Language 3</option>
-              <option>Preferred Language 4</option>
-              <option>Preferred Language 5</option>
             </select>
           </div>
 
@@ -135,73 +95,26 @@
   </ul>
 </div>
 
-<!-- Form to create company
-Name: Text
-Country: Dropdown
-Industry: Dropdown
-Size: Dropdown
-Number of Security Employees: Text
-Preferred Language: Dropdown
-Budget: Text
--->
-<div class="center_profile top_margin center_text">
+
+<div class="center_profile top_margin center_text" id="company-div" hidden>
   <div class="uk-margin">
 
-    <ul uk-accordion id = "create_company_accordion"> <!-- This accordion opens the already saved company info -->
+    <ul uk-accordion> <!-- This accordion opens the already saved company info -->
       <li class="uk-open">
         <h3 class="uk-accordion-title">Company Info </h3>
-        <div class="uk-accordion-content">
-          <form action="/company/create" method="post" id="register-form">
-            <div id = "display_company_form"> <!-- This is the profile information that is already saved and should be displayed -->
-              <div class="uk-column-1-2">
-                <div id = "profile-cname" class = "text_right_align">
-                  Name
-                </div>
-                <div id = "profile-country" class = "text_right_align">
-                  Country
-                </div>
-                <div id = "profile-industry" class = "text_right_align">
-                  Industry
-                </div>
-                <div id = "profile-size" class = "text_right_align">
-                  Size
-                </div>
-                <div id = "profile-phone" class = "text_right_align">
-                  Number of Security Employees
-                </div>
-                <div id = "profile-phone" class = "text_right_align">
-                  Preferred Language
-                </div>
-                <div id = "profile-phone" class = "text_right_align">
-                  Budget
-                </div>
-
-
-                <!-- Comapny info to be displayed in right column -->
-                <div id = "profile-cname" class = "text_left_align">
-                  Name
-                </div>
-                <div id = "profile-country" class = "text_left_align">
-                  Country
-                </div>
-                <div id = "profile-industry" class = "text_left_align">
-                  Industry
-                </div>
-                <div id = "profile-size" class = "text_left_align">
-                  Size
-                </div>
-                <div id = "profile-phone" class = "text_left_align">
-                  Number of Security Employees
-                </div>
-                <div id = "profile-phone" class = "text_left_align">
-                  Preferred Language
-                </div>
-                <div id = "profile-phone" class = "text_left_align">
-                  Budget
-                </div>
+          <div class="uk-accordion-content">
+              <div>
+                  <!-- This is the profile information that is already saved and should be displayed -->
+                  <table class="profile_table">
+                      <tr><td class="text_right_align">Name</td><td id="company-name" class="text_left_align"></td></tr>
+                      <tr><td class="text_right_align">Industry</td><td id="company-industry" class="text_left_align"></td></tr>
+                      <tr><td class="text_right_align">Country</td><td id="company-country" class="text_left_align"></td></tr>
+                      <tr><td class="text_right_align">Size</td><td id="company-size" class="text_left_align"></td></tr>
+                      <tr><td class="text_right_align">Security Employees</td><td id="company-securityEmps" class="text_left_align"></td></tr>
+                      <tr><td class="text_right_align">Language</td><td id="company-language" class="text_left_align"></td></tr>
+                  </table>
               </div>
-            </div>
-          </form>
+          </div>
         </div>
       </li>
     </ul>
