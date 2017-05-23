@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Addlevel</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Addlevel</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Framework -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/framework.css">
   <link rel="stylesheet" href="css/navigation.css">
-	<link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/footer.css">
 
   <!-- Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -30,108 +30,93 @@
 
   <div class="row">
     <div class="uk-button-group uk-align-right">
-      <button class="uk-button uk-button-small button_save uk-button-primary">Previous</button>
       <button class="uk-button uk-button-small uk-button-secondary">Save & Exit</button>
-      <button class="uk-button uk-button-small uk-button-primary">Next</button>
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-12">
-      <span><h1 class = "question_number"> Question 1 </h1></span>
-      <span><h5 class = "question_text">Do you prevent unapproved software from being executed, for example, through whitelisting of applications?</h5></span>
+      <span><h1 class = "question_number" id = "question-title"></h1></span>
+      <span><h5 class = "question_text" id = "question-text"></h5></span>
       <form>
         <div class="col-sm-12 col-md-12">
           <span>
-            <div class="radio">
-              <input type="radio" name="gridRadios1" id="checkrads_11">
-              <label for="checkrads_11">Definitely yes</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="gridRadios1" id="checkrads_12">
-              <label for="checkrads_12">Probably yes</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="gridRadios1" id="checkrads_13">
-              <label for="checkrads_13">Might or might not</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="gridRadios1" id="checkrads_14">
-              <label for="checkrads_14">Probably not</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="gridRadios1" id="checkrads_15">
-              <label for="checkrads_15">Definitely not</label>
-            </div>
-          </span>
-        </div>
+            <div id = "question-options">
 
-        <div class="col-md-12">
-          <div class="uk-alert-primary" uk-alert>
-            <a class="uk-alert-close" uk-close></a>
-            <p> IT Security and Risk Management.</p>
-            <h5> Follow the link for more information on the context of the question </h5>
+            </div>
+
+            <!--        <div class="radio">
+            <input type="radio" name="gridRadios1" id="checkrads_11">
+            <label for="checkrads_11">Definitely yes</label>
           </div>
+          <div class="radio">
+          <input type="radio" name="gridRadios1" id="checkrads_12">
+          <label for="checkrads_12">Probably yes</label>
         </div>
-
-        <progress id="progressbar" class="uk-progress" value="1" max="100"></progress>
-
-        <script>
-
-        jQuery(function () {
-
-          var animate = setInterval(function () {
-
-            window.progressbar && (progressbar.value += 10);
-
-            if (!window.progressbar || progressbar.value >= progressbar.max) {
-              clearInterval(animate);
-            }
-          }, 1000);
-        });
-
-        </script>
-        <div class="progressnumber">
-          <a href="#" class="uk-slidenav-large" uk-slidenav-previous></a>
-          <span>1/1</span>
-          <a href="#" class="uk-slidenav-large" uk-slidenav-next></a>
-        </div>
+        <div class="radio">
+        <input type="radio" name="gridRadios1" id="checkrads_13">
+        <label for="checkrads_13">Might or might not</label>
       </div>
+      <div class="radio">
+      <input type="radio" name="gridRadios1" id="checkrads_14">
+      <label for="checkrads_14">Probably not</label>
+    </div>
+    <div class="radio">
+    <input type="radio" name="gridRadios1" id="checkrads_15">
+    <label for="checkrads_15">Definitely not</label>
+  </div>-->
+</span>
+</div>
 
-    </form>
+<div class="col-md-12">
+  <div class="uk-alert-primary" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <p> <ul><a href = ""></a></ul></p>
   </div>
+</div>
 
-  <!-- footer section -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5">
-          <img src="images/addlevel_logo_white_trans.svg" class="addlevelLogo">
-          <ul class="sitemap">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Questions</a></li>
-            <li><a href="#">MyProfile</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-2"></div>
-        <div class="col-sm-5">
-          <ul class="social-icon">
-            <li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-            <li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-            <li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
-            <li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
-            <li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="0.9s"></a></li>
-          </ul>
-        </div>
+<progress id="progress-bar" class="uk-progress" value="" max="100"></progress>
+
+<div class="progressnumber">
+  <a href="#" class="uk-slidenav-large" id = "question-previous" uk-slidenav-previous></a>
+  <span id = "question-count"></span>
+  <a href="#" class="uk-slidenav-large" id = "question-next" uk-slidenav-next></a>
+</div>
+</div>
+</form>
+</div>
+
+<!-- footer section -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <img src="images/addlevel_logo_white_trans.svg" class="addlevelLogo">
+        <ul class="sitemap">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Questions</a></li>
+          <li><a href="#">MyProfile</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-5">
+        <ul class="social-icon">
+          <li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+          <li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+          <li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+          <li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
+          <li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="0.9s"></a></li>
+        </ul>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <!--Script-->
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
+<!--Script-->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
