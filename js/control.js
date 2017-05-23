@@ -3,7 +3,7 @@ siteRoot = 'http://localhost:61071'
 function create_control(data) {
     var control =
         '<div>' +
-        '<div class="uk-card uk-card-default' + (!data.included ? ' disabled_card' : '') + '">' +
+        '<div class="control-card uk-card uk-card-default' + (data.included ? ' uk-card-hover' : ' card_disabled') + '">' +
         '<div class="uk-card-header card_header">' +
         '</div>' +
         '<div class="uk-card-body card_body">' +
@@ -30,4 +30,16 @@ $(document).ready(function () {
             $('#control-grid').append(controls);
         }
     });
+
+    $(document).on('click', '.control-card', function (e) {
+        e.preventDefault();
+
+        if ($(this).hasClass("card_disabled"))
+            alert("This control is not included in your current plan.\nIf you wish to utilize this control, please consider upgrading your plan.");
+        else {
+            var id = $('input[type=hidden]', this).val();
+            document.location.href = "/question_table.html?controlId=" + id;
+        }
+
+    })
 });
