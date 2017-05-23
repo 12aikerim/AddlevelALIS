@@ -80,8 +80,8 @@ footer {
 
 /* This disables the card */
 .disabled_card{
-  opacity: 0.5;
-  margin-bottom: -200px;
+  opacity: 0.2;
+  background-color: #c1c6c8;
 }
 
 .center_div{
