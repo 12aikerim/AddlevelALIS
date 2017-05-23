@@ -55,12 +55,3 @@ footer p {
 .social-icon li a:hover {
   color: #0093d0;
 }
-
-@media screen and (min-width: 992px) {
-  @-moz-document url-prefix() {
-    #portfolio .col-lg-4,
-    #portfolio .col-md-4 {
-      width: 33.333%;
-    }
-  }
-}
