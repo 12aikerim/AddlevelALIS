@@ -73,9 +73,9 @@ button {
 }
 
 .app-dashboard-sidebar-title-area {
-  height: 10%;
+  height: 50px;
 }
 
 .app-dashboard-sidebar-inner {
-  height: 80%;
+  height: calc(100% - 50px);
 }
