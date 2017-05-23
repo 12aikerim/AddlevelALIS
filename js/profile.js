@@ -3,11 +3,11 @@
         url: siteRoot + '/profile',
         type: 'get',
         success: function (data, textStatus, jqxhr) {
-            $('#profile-fname').html(data.firstName);
+            $('#profile-fname').find('input').val(data.firstName);
             $('#profile-lname').html(data.lastName);
             $('#profile-email').html(data.email);
             $('#profile-phone').html(data.phone);
-            $('#profile-position').html(data.position);
+            $('#profile-position').find('select').find('option').first().html(data.position);
             $('#profile-div').removeAttr('hidden');
         }
     });

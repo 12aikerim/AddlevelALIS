@@ -11,6 +11,12 @@
     padding-left: 20px;
 }
 
+.no_field {
+    border: none;
+    background-color: #fff !important;
+    color: #666 !important;
+}
+
 
 
 .center_div{
