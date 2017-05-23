@@ -4,11 +4,11 @@
         type: 'get',
         success: function (data, textStatus, jqxhr) {
             $('#profile-fname').find('input').val(data.firstName);
-            $('#profile-lname').html(data.lastName);
-            $('#profile-email').html(data.email);
-            $('#profile-phone').html(data.phone);
+            $('#profile-lname').find('input').val(data.lastName);
+            $('#profile-email').find('input').val(data.email);
+            $('#profile-phone').find('input').val(data.phone);
             $('#profile-position').find('select').find('option').first().html(data.position);
-            $('#profile-div').removeAttr('hidden');
+            $('#profile-div').removeAttr('hidden');/*Need to change this ~Vinay */
         }
     });
 
@@ -51,13 +51,14 @@
                     }
                 });
             } else {
+              /*   $('#profile-fname').find('input').val(data.firstName);   */
                 $('#company-div').removeAttr('hidden');
-                $('#company-name').html(co.name);
-                $('#company-industry').html(co.industry);
-                $('#company-country').html(co.country);
-                $('#company-size').html(co.size);
-                $('#company-securityEmps').html(co.securityEmps);
-                $('#company-language').html(co.language);
+                $('#company-name').find('input').val(co.name);
+                $('#company-industry').find('input').val(co.industry);
+                $('#company-country').find('input').val(co.country);
+                $('#company-size').find('input').val(co.size);
+                $('#company-securityEmps').find('input').val(co.securityEmps);
+                $('#company-language').find('input').val(co.language);
 
 
                 console.log(co);
@@ -91,5 +92,5 @@
         });
     })
 
-    
+
 });

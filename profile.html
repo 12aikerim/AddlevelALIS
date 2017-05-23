@@ -35,9 +35,9 @@
         <form action="/profile/edit" method="post" id="profile-edit-form">
             <table class="profile_table">
                 <tr><td class="text_right_align">First Name</td><td id="profile-fname" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="firstname"></td></tr> <!--FIND ME-->
-                <tr><td class="text_right_align">Last Name</td><td id="profile-lname" class="text_left_align"></td></tr>
-                <tr><td class="text_right_align">Email</td><td id="profile-email" class="text_left_align"></td></tr>
-                <tr><td class="text_right_align">Phone</td><td id="profile-phone" class="text_left_align"></td></tr>
+                <tr><td class="text_right_align">Last Name</td><td id="profile-lname" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="lastname"></td></tr>
+                <tr><td class="text_right_align">Email</td><td id="profile-email" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="email"></td></tr>
+                <tr><td class="text_right_align">Phone</td><td id="profile-phone" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="phone"></td></tr>
                 <tr>
                     <td class="text_right_align">Position</td>
                     <td id="profile-position" class="text_left_align">
@@ -117,12 +117,54 @@
               <div>
                   <!-- This is the profile information that is already saved and should be displayed -->
                   <table class="profile_table">
-                      <tr><td class="text_right_align">Name</td><td id="company-name" class="text_left_align"></td></tr>
-                      <tr><td class="text_right_align">Industry</td><td id="company-industry" class="text_left_align"></td></tr>
-                      <tr><td class="text_right_align">Country</td><td id="company-country" class="text_left_align"></td></tr>
-                      <tr><td class="text_right_align">Size</td><td id="company-size" class="text_left_align"></td></tr>
-                      <tr><td class="text_right_align">Security Employees</td><td id="company-securityEmps" class="text_left_align"></td></tr>
-                      <tr><td class="text_right_align">Language</td><td id="company-language" class="text_left_align"></td></tr>
+                    <tr><td class="text_right_align">Name</td><td id="company-name" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="name"></td></tr>
+                    <tr>
+                        <td class="text_right_align">Country</td>
+                        <td id="profile-position" class="text_left_align">
+                            <select class="uk-select no_field" name="country" disabled>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text_right_align">Industry</td>
+                        <td id="profile-position" class="text_left_align">
+                            <select class="uk-select no_field" name="industry" disabled>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text_right_align">Company Size</td>
+                        <td id="profile-position" class="text_left_align">
+                            <select class="uk-select no_field" name="size" disabled>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr><td class="text_right_align">Security Employees</td><td id="company-securityEmps" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="securityEmps"></td></tr>
+                    <tr>
+                        <td class="text_right_align">Preferred Language</td>
+                        <td id="profile-position" class="text_left_align">
+                            <select class="uk-select no_field" name="language" disabled>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr><td class="text_right_align">Budget</td><td id="company-securityEmps" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="Budget"></td></tr>
+
+<!--
+                      <tr><td class="text_right_align">Name</td><td id="company-name" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="name"></td></tr>
+                      <tr><td class="text_right_align">Industry</td><td id="company-industry" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="industry"></td></tr>
+                      <tr><td class="text_right_align">Country</td><td id="company-country" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="country"></td></tr>
+                      <tr><td class="text_right_align">Size</td><td id="company-size" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="size"></td></tr>
+                      <tr><td class="text_right_align">Security Employees</td><td id="company-securityEmps" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="securityEmps"></td></tr>
+                      <tr><td class="text_right_align">Language</td><td id="company-language" class="text_left_align"><input class="uk-input no_field" type="text" disabled name="language"></td></tr>
+-->
                   </table>
               </div>
           </div>
