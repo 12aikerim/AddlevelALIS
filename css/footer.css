@@ -10,7 +10,6 @@ footer {
 }
 footer p {
   padding-top: 20px;
-
 }
 .addlevelLogo {
   width: 120px;
@@ -21,14 +20,12 @@ footer p {
 .sitemap li {
   list-style: none;
   display: inline-block;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 15px;
 }
 .sitemap li a {
   box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.09);
   color: #808080;
   font-size: 15px;
-  width: 56px;
-  height: 56px;
   text-align: center;
   text-decoration: none;
   transition: all 0.4s ease-in-out;
