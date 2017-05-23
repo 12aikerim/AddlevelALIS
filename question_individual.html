@@ -7,9 +7,10 @@
   <title>Project ALIS</title>
 
   <!-- UIkit CSS -->
-  <link rel="stylesheet" href="css/navigation.css"/>
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 
   <!-- jQuery is required -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,66 +19,102 @@
   <!-- UIkit JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit-icons.min.js"></script>
-</head>
 <!-- Compressed CSS -->
 <link rel="stylesheet" href="css/foundation.css">
 <link rel="stylesheet" href="css/">
 <link rel="stylesheet" href="css/framework.css">
-<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/question_individual.css"/>
-<link rel="stylesheet" href="css/navigation.css"/>
+
 <link rel="stylesheet" href="css/footer.css"/>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <!-- Compressed JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/framework.js"></script>
+</head>
+
 <body>
 
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Addlevel ProjectALIS</a>
+        <img src="img/addlevel_logo_white_trans.svg" class="uk-logo addlevelLogo">
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav uk-subnav" uk-margin>
-          <li><a class="navlink" href="#">Dashboard</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="navlink uk-animation-fade" href="#">Dashboard</a></li>
+          <li><a class="navlink uk-animation-fade" href="#">FAQ</a></li>
+          <li><a class="navlink uk-animation-fade" href="#">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Client@addlevel.se
-              <span class="caret"></span></a>
+            <a class="dropdown-toggle uk-animation-fade" data-toggle="dropdown" href="#">Client@addlevel.se<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Logout</a></li>
               </ul>
-            </li>
-          </ul>
+          </li>
 
+            <a class="dropdown-toggle uk-animation-fade" data-toggle="dropdown" href="#">Client@addlevel.se<span class="caret"></span></a>
+              <ul uk-dropdown="mode: click">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+
+          <div class="uk-inline">
+              <button class="uk-button uk-button-default" type="button">Click</button>
+              <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+          </div>
+        </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+
+
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active ad_navtext_toggle"><a href="">Home</a></li>
+                <li class="uk-parent ad_navtext_toggle"><a href="">Categories</a></li>
+                <li class="uk-parent ad_navtext_toggle"><a href="">Collections</a></li>
+                <li class="ad_navicon_toggle"><a href="" uk-icon="icon: menu"></a></li>
+                <div uk-dropdown>
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-nav-header"><a href="#">Home</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-nav-header"><a href="">Categories</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-nav-header"><a href="">Collection</a></li>
+                        <li class="uk-nav-divider"></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href=""><img src="img/addlevel_logo_white_trans.svg" class="uk-logo addlevelLogo"></a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li class="ad_navtext_toggle"><a href="">Search</a></li>
+                <li class="uk-parent ad_navtext_toggle"><a href="">Add Products</a></li>
+                <li class="uk-active ad_navtext_toggle"><a href="">Login</a></li>
+                <li class="ad_navicon_toggle"><a href="" uk-icon="icon: search"></a></li>
+                <li class="ad_navicon_toggle"><a href="" uk-icon="icon: plus"></a></li>
+                <li class="ad_navicon_toggle"><a href="" uk-icon="icon: user"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!--end navigation panel -->
 
 
 
     <div class="app-dashboard-body off-canvas-wrapper">
       <div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium" data-off-canvas>
         <div class="app-dashboard-sidebar-title-area">
-          <div class="app-dashboard-close-sidebar">
-            <h3 class="app-dashboard-sidebar-block-title">Questionnaire</h3>
-            <!-- Close button -->
-            <button id="close-sidebar" data-app-dashboard-toggle-shrink class="app-dashboard-sidebar-close-button show-for-medium" aria-label="Close menu" type="button">
-              <span aria-hidden="true"><a href="#"><i class="large fa fa-angle-double-left"></i></a></span>
-            </button>
-          </div>
-          <div class="app-dashboard-open-sidebar">
-            <button id="open-sidebar" data-app-dashboard-toggle-shrink class="app-dashboard-open-sidebar-button show-for-medium" aria-label="open menu" type="button">
-              <span aria-hidden="true"><a href="#"><i class="large fa fa-angle-double-right"></i></a></span>
-            </button>
-          </div>
+            <h5 class="app-dashboard-sidebar-block-title">Questionnaire</h5>
         </div>
         <div class="app-dashboard-sidebar-inner">
           <ul class="vertical menu" data-accordion-menu>
@@ -105,6 +142,30 @@
                 <li><a href="#">Question 7</a></li>
               </ul>
             </li>
+            <li>
+              <a href="#">Control #3</a>
+              <ul class="menu vertical nested">
+                <li><a href="#">Question 1</a></li>
+                <li><a href="#">Question 2</a></li>
+                <li><a href="#">Question 3</a></li>
+                <li><a href="#">Question 4</a></li>
+                <li><a href="#">Question 5</a></li>
+                <li><a href="#">Question 6</a></li>
+                <li><a href="#">Question 7</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Control #4</a>
+              <ul class="menu vertical nested">
+                <li><a href="#">Question 1</a></li>
+                <li><a href="#">Question 2</a></li>
+                <li><a href="#">Question 3</a></li>
+                <li><a href="#">Question 4</a></li>
+                <li><a href="#">Question 5</a></li>
+                <li><a href="#">Question 6</a></li>
+                <li><a href="#">Question 7</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -113,72 +174,52 @@
 
 
       <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
+          <div class="row">
+            <div class="uk-button-group uk-align-right">
+              <button class="uk-button uk-button-small button_save uk-button-primary">Previous</button>
+              <button class="uk-button uk-button-small uk-button-secondary">Save & Exit</button>
+              <button class="uk-button uk-button-small uk-button-primary">Next</button>
+            </div>
+          </div>
 
-      <div class="row">
-        	<div class="col-lg-12">
-        	    <a class="uk-button button_save uk-button-default" href="#">Save</a>
-        	    <button class="uk-button  uk-button-default">Previous</button>
-        	    <button class="uk-button  uk-button-default">Exit</button>
-        	</div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-12">
-          <span><h4 class = "question_number"> Question 1. </h4></span>
-          <span><h5 class = "question_text">Do you prevent unapproved software from being executed, for example, through whitelisting of applications?</h5></span>
-          <form>
-            <div class="col-sm-12 col-md-12 option_spacing">
-              <span>
-                <div class="radio">
-                  <input type="radio" name="gridRadios1" id="checkrads_11">
-                  <label for="checkrads_11">Definitely yes</label>
+        <div class="row">
+          <div class="col-md-12">
+            <span><h4 class = "question_number"> Question 1. </h4></span>
+            <span><h5 class = "question_text">Do you prevent unapproved software from being executed, for example, through whitelisting of applications?</h5></span>
+            <form>
+              <div class="col-sm-12 col-md-12 option_spacing">
+                <span>
+                  <div class="radio">
+                    <input type="radio" name="gridRadios1" id="checkrads_11">
+                    <label for="checkrads_11">Definitely yes</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="gridRadios1" id="checkrads_12">
+                    <label for="checkrads_12">Probably yes</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="gridRadios1" id="checkrads_13">
+                    <label for="checkrads_13">Might or might not</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="gridRadios1" id="checkrads_14">
+                    <label for="checkrads_14">Probably not</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="gridRadios1" id="checkrads_15">
+                    <label for="checkrads_15">Definitely not</label>
+                  </div>
+                </span>
+              </div>
+
+              <div class="col-md-12">
+                <div class="uk-alert-primary" uk-alert>
+                  <a class="uk-alert-close" uk-close></a>
+                  <p> IT Security and Risk Management.</p>
+                  <h5> Follow the link for more information on the context of the question </h5>
                 </div>
-              </span>
-            </div>
-
-            <div class="col-sm-12 col-md-12 option_spacing">
-              <span>
-                <div class="radio">
-                  <input type="radio" name="gridRadios1" id="checkrads_12">
-                  <label for="checkrads_12">Probably yes</label>
-                </div>
-              </span>
-            </div>
-
-            <div class="col-sm-12 col-md-12 option_spacing">
-              <span>
-                <div class="radio">
-                  <input type="radio" name="gridRadios1" id="checkrads_13">
-                  <label for="checkrads_13">Might or might not</label>
-                </div>
-              </span>
-            </div>
-
-            <div class="col-sm-12 col-md-12 option_spacing">
-              <span>
-                <div class="radio">
-                  <input type="radio" name="gridRadios1" id="checkrads_14">
-                  <label for="checkrads_14">Probably not</label>
-                </div>
-              </span>
-            </div>
-
-            <div class="col-sm-12 col-md-12 option_spacing">
-              <span>
-                <div class="radio">
-                  <input type="radio" name="gridRadios1" id="checkrads_15">
-                  <label for="checkrads_15">Definitely not</label>
-                </div>
-              </span>
-            </div>
-
-            <div class="col-md-12">
-              <div class="uk-alert-primary" uk-alert>
-    <a class="uk-alert-close" uk-close></a>
-    <p> IT Security and Risk Management.</p>
-    <h5> Follow the link for more information on the context of the question </h5>
-</div>
-            </div>
+              </div>
 
 
 
@@ -208,15 +249,35 @@
           </div>
         </div>
 
-
       </form>
     </div>
   </div>
 </div>
 
 
-<!--Footer-->
+<!-- footer section -->
 <footer>
+<<<<<<< HEAD
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+          <img src="img/addlevel_logo_white_trans.svg" class="addlevelLogo">
+          <ul class="sitemap">
+            <li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">FAQ</a></li>
+            <li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">Questions</a></li>
+            <li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">MyProfile</a></li>
+            <li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">Contact</a></li>
+          </ul>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-5">
+        <ul class="social-icon">
+          <li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+          <li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+          <li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+          <li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
+          <li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="0.9s"></a></li>
+=======
   <div class="columns shrink footer left_align_footer_image">
     <img src="images/addlevel_logo_white.svg" alt="HTML5 Icon" width="200" height="200" id = "padding_top_logo">
       <div class = "left_align_footer">
@@ -227,7 +288,9 @@
           <!-- <li><a href="" style="color: rgb(255,255,255)">Link</a></li> -->
           <li><a href="FAQ.html" style="color: rgb(255,255,255)">FAQ</a></li>
           <li><a href="contact.html" style="color: rgb(255,255,255)">Contact Us </a></li>
+>>>>>>> origin/master
         </ul>
+      </div>
     </div>
   </div>
 </footer>

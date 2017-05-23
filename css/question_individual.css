@@ -51,14 +51,16 @@ h5.alert_message_subtitle{
   width: 100px;
 }
 .progressnumber{
-
-margin-left: 40%;
-margin-right: 0%;
+  margin-left: 40%;
+  margin-right: 0%;
+}
+.app-dashboard-body-content {
+  width: 50%;
 }
 p{
     text-emphasis-color: dodgerblue;
 }
 
-.navlink {
-
+button {
+  width: 120px;
 }
