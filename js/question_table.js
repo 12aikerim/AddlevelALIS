@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    var controlId = getParameterByName('controlId');
+    var controlId = sessionStorage.getItem('controlId');;
     $.ajax({
         url: siteRoot + '/question/questions?controlId=' + controlId,
         type: 'get',
         success: function (data, textStatus, jqxhr) {
-            localStorage.setItem('control-questions', jqxhr.responseText);
+            sessionStorage.setItem('control-questions', jqxhr.responseText);
         }
     });
 });
