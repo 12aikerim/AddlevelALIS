@@ -1,109 +1,111 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Addlevel</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Addlevel</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Framework -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- Framework -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/framework.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/question_individual.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/foundation.css">
+<link rel="stylesheet" href="css/framework.css">
+<link rel="stylesheet" href="css/navigation.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/question_individual.css">
 
-    <!-- Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit-icons.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-    <script type="text/javascript" src="js/question_individual.js"></script>
+<!-- Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit-icons.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/question_individual.js"></script>
 </head>
 
 <body>
-    <div class="app-dashboard-body off-canvas-wrapper">
 
-        <div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium" data-off-canvas>
+<div class="app-dashboard-body off-canvas-wrapper">
 
-            <div class="app-dashboard-sidebar-inner">
-                <h5 class="app-dashboard-sidebar-block-title" id="sidebar-control"></h5>
-                <ul style="list-style: none;" id="sidebar-questions"></ul>
-            </div>
-        </div>
+<div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium" data-off-canvas>
 
-        <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
-            <div class="row">
-                <div class="uk-button-group uk-align-right">
-                    <button class="uk-button uk-button-small uk-button-secondary" id="answer-save">Save & Exit</button>
-                </div>
-            </div>
+<div class="app-dashboard-sidebar-inner">
+<h5 class="app-dashboard-sidebar-block-title" id="sidebar-control"></h5>
+<ul style="list-style: none;" id="sidebar-questions"></ul>
+</div>
+</div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="question_number" id="question-title"></h1>
-                    <h5 class="question_text" id="question-text"></h5>
-                    <div class="col-sm-12 col-md-12">
-                        <div id="question-options"></div>
-                    </div>
+<div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
+<div class="row">
+<div class="uk-button-group uk-align-right">
+<button class="uk-button uk-button-small uk-button-secondary" id="answer-save">Save & Exit</button>
+</div>
+</div>
 
-                    <div class="col-md-12">
-                        <div class="uk-alert-primary" uk-alert>
-                            <a class="uk-alert-close" uk-close></a>
-                            <p id="control-wiki"></p>
-                        </div>
-                    </div>
+<div class="row">
+<div class="col-md-12">
+<h1 class="question_number" id="question-title"></h1>
+<h5 class="question_text" id="question-text"></h5>
+<div class="col-sm-12 col-md-12">
+<div id="question-options"></div>
+</div>
 
-                    <progress id="progress-bar" class="uk-progress" value="" max="100"></progress>
+<div class="col-md-12">
+<div class="uk-alert-primary" uk-alert>
+<a class="uk-alert-close" uk-close></a>
+<p id="control-wiki"></p>
+</div>
+</div>
 
-                    <div class="progressnumber">
-                        <a href="" class="uk-slidenav-large" id="question-previous" uk-slidenav-previous></a>
-                        <span id="question-count"></span>
-                        <a href="" class="uk-slidenav-large" id="question-next" uk-slidenav-next></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<progress id="progress-bar" class="uk-progress" value="" max="100"></progress>
 
-    <!-- footer section -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5">
-                    <img src="images/addlevel_logo_white_trans.svg" class="addlevelLogo">
-                    <ul class="sitemap">
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Questions</a></li>
-                        <li><a href="#">MyProfile</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2"></div>
-                <div class="col-sm-5">
-                    <ul class="social-icon">
-                        <li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-                        <li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-                        <li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
-                        <li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
-                        <li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="0.9s"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+<div class="progressnumber">
+<a href="" class="uk-slidenav-large" id="question-previous" uk-slidenav-previous></a>
+<span id="question-count"></span>
+<a href="" class="uk-slidenav-large" id="question-next" uk-slidenav-next></a>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-    <!--Script-->
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+<!-- footer section -->
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-sm-5">
+<img src="images/addlevel_logo_white_trans.svg" class="addlevelLogo">
+<ul class="sitemap">
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Questions</a></li>
+<li><a href="#">MyProfile</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+<div class="col-sm-2"></div>
+<div class="col-sm-5">
+<ul class="social-icon">
+<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
+<li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="0.9s"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+<!--Script-->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

@@ -6,6 +6,10 @@
 
 	<!-- UIkit CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/contact.css"
  	<!-- jQuery is required -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -13,84 +17,81 @@
 	<!-- UIkit JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit-icons.min.js"></script>
-
-
-
-
-
 </head>
+
+<!-- Navigation  Section-->
 <nav class="uk-navbar-container" uk-navbar style="background-color:#0093d0;">
-	<div class="uk-navbar-left">
-		 <a class="uk-navbar-item uk-logo" href="#">
-		 <img src="addlevel_logo_white_trans0.svg" width="120" height="120"uk-svg style="padding-bottom:7px;"></a>
+<div class="uk-navbar-left">
+<a class="uk-navbar-item uk-logo" href="#">
+<img src="images/addlevel_logo_white_trans.svg" width="120" height="120"uk-svg style="padding-bottom:7px;"></a>
+<ul class="uk-navbar-nav ">
+<li class="uk-active " ><a href=""><b><font color="white" size="2em;">Dashboard</font></b></a></li>
+<li class="uk-parent"><a href=""><b><font color="white" size="2em;">Questionaire</font></b></a></li>
+<li class="uk-parent"><a href=""><b><font color="white" size="2em;">Contact</font></b></a></li>
+<li><a href=""><b><font color="white" size="2em;">FAQ</font></b></a></li>
+</ul>
+</div>
+<div class="uk-navbar-right" style="padding-right:20px;">
 
-			<ul class="uk-navbar-nav ">
+<ul class="uk-navbar-nav">
+<li>
+<a href="#">
+<span uk-icon="icon:user" style="padding-right:5px;padding-bottom:5px;color:white;"></span><b><font color="white" size="2em;">My profile</font></b>
+</a>
+<div class="uk-navbar-dropdown">
+<ul class="uk-nav uk-navbar-dropdown-nav">
+<li><a href="#">
+<span uk-icon="icon:settings" style="padding-right:10px;"></span>Profile </a></li>
+<li class="uk-nav-divider"></li>
+<li><a href="#"><span uk-icon="icon:sign-out" style="padding-right:10px;"></span>Sign out</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</nav> <!-- End Nav -->
 
-					<li class="uk-active " ><a href=""><b><font color="white" size="3.5px;">Dashboard</font></b></a></li>
-					<li class="uk-parent"><a href=""><b><font color="white" size="3.5px;">Contact</font></b></a></li>
-					<li><a href=""><b><font color="white" size="3.5px;">FAQ</font></b></a></li>
 
-			</ul>
-
-	</div>
-	<div class="uk-navbar-right" style="padding-right:20px;">
-
-			<ul class="uk-navbar-nav">
-					<li>
-							<a href="#">
-								<span uk-icon="icon:user" style="padding-right:5px;padding-bottom:5px;color:white;"></span><b><font color="white" size="3.5px;">My profile</font></b>
-							</a>
-							<div class="uk-navbar-dropdown">
-									<ul class="uk-nav uk-navbar-dropdown-nav">
-
-											<li><a href="#">
-												<span uk-icon="icon:settings" style="padding-right:10px;"></span>Profile </a></li>
-											<li class="uk-nav-divider"></li>
-											<li><a href="#"><span uk-icon="icon:sign-out" style="padding-right:10px;"></span>Sign out</a></li>
-									</ul>
-							</div>
-</nav>
 <body>
-	<div class="uk-flex uk-flex-center">
-		<div class="uk-card uk-card-default uk-card-body" style=" padding: 20px;margin-top: 30px;">
-	<form class="uk-form-horizontal uk-margin-large">
-    <h2>Contact Us</h2>
-    <div class="uk-margin">
-        <label class="uk-form-label" for="form-horizontal-text"><strong>Name</strong></label>
-        <div class="uk-form-controls">
-            <input class="uk-input" id="contact-name" type="text" >
-        </div>
-    </div>
+<div class="uk-flex uk-flex-center">
+<div class="uk-card uk-card-default uk-card-body" style=" padding: 20px;margin-top: 30px;">
+<form class="uk-form-horizontal uk-margin-large">
+<h2>Contact Us</h2>
+<div class="uk-margin">
+<label class="uk-form-label" for="form-horizontal-text"><strong>Name</strong></label>
+<div class="uk-form-controls">
+<input class="uk-input" id="contact-name" type="text" >
+</div>
+</div>
 
-		<div class="uk-margin">
-				<label class="uk-form-label" for="form-horizontal-text"><strong>Email</strong></label>
-				<div class="uk-form-controls">
-						<input class="uk-input" id="contact-email" type="text">
-				</div>
-		</div>
+<div class="uk-margin">
+<label class="uk-form-label" for="form-horizontal-text"><strong>Email</strong></label>
+<div class="uk-form-controls">
+<input class="uk-input" id="contact-email" type="text">
+</div>
+</div>
 
-		<div class="uk-margin">
-				<label class="uk-form-label" for="form-horizontal-text"><strong>Subject</strong></label>
-				<div class="uk-form-controls">
-						<input class="uk-input" id="contact-subject" type="text" >
-				</div>
-		</div>
+<div class="uk-margin">
+<label class="uk-form-label" for="form-horizontal-text"><strong>Subject</strong></label>
+<div class="uk-form-controls">
+<input class="uk-input" id="contact-subject" type="text" >
+</div>
+</div>
 
-		<div class="uk-margin">
-				<label class="uk-form-label" for="form-horizontal-text"><strong>Your message</strong></label>
-				<div class="uk-form-controls">
-						<textarea class="uk-width-large-1-1" id="form-h-t" cols="100" rows="10"></textarea>
-				</div>
-		</div>
-		<div class="uk-form-row">
-                            <div class="uk-form-controls">
-                                    <button class="uk-button uk-button-primary">Submit</button>
-                                </div>
-                            </div>
-	</div>
+<div class="uk-margin">
+<label class="uk-form-label" for="form-horizontal-text"><strong>Your message</strong></label>
+<div class="uk-form-controls">
+<textarea class="uk-width-large-1-1" id="form-h-t" cols="100" rows="10"></textarea>
+</div>
+</div>
+<div class="uk-form-row">
+<div class="uk-form-controls">
+<button class="uk-button uk-button-primary">Submit</button>
+</div>
+</div>
+</div>
 </div>
 </form>
 
-     </body>
+</body>
 
 </html>

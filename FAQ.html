@@ -1,169 +1,146 @@
-﻿<!DOCTYPE html>
-<html class="no-js" lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>ALIS UI</title>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Addlevel</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- UIkit CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link red="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/foundation.css">
+  <!-- Framework -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
+  <!-- Custom CSS -->
 	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/footer.css">
 
-	<!-- jQuery is required -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-	<!-- UIkit JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit-icons.min.js"></script>
+  <!-- Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit-icons.min.js"></script>
 </head>
-<!-- Compressed CSS -->
 
-
-<!-- Compressed JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
 <body>
-<div class="uk-section uk-section-default">
-    <div class="uk-container" style="background-color:red;padding-bottom: 40px;background-color:#c6c1c8;
-    border-bottom: 1px solid; color: #dbdbdb;">
+	<!-- Navigation  Section-->
+	<nav class="uk-navbar-container" uk-navbar style="background-color:#0093d0;">
+	<div class="uk-navbar-left">
+	<a class="uk-navbar-item uk-logo" href="#">
+	<img src="images/addlevel_logo_white_trans.svg" width="120" height="120"uk-svg style="padding-bottom:7px;"></a>
+	<ul class="uk-navbar-nav ">
+	<li class="uk-active " ><a href=""><b><font color="white" size="2em;">Dashboard</font></b></a></li>
+	<li class="uk-parent"><a href=""><b><font color="white" size="2em;">Questionaire</font></b></a></li>
+	<li class="uk-parent"><a href=""><b><font color="white" size="2em;">Contact</font></b></a></li>
+	<li><a href=""><b><font color="white" size="2em;">FAQ</font></b></a></li>
+	</ul>
+	</div>
+	<div class="uk-navbar-right" style="padding-right:20px;">
 
-		<h2 style="margin-left:15px;margin-top:30px; ">Frequently Asked Questions</h2>
-		<div class="uk-card uk-card-default uk-card-body" style=" margin-top:10px;margin-bottom:10px;">
+	<ul class="uk-navbar-nav">
+	<li>
+	<a href="#">
+	<span uk-icon="icon:user" style="padding-right:5px;padding-bottom:5px;color:white;"></span><b><font color="white" size="2em;">My profile</font></b>
+	</a>
+	<div class="uk-navbar-dropdown">
+	<ul class="uk-nav uk-navbar-dropdown-nav">
+	<li><a href="#">
+	<span uk-icon="icon:settings" style="padding-right:10px;"></span>Profile </a></li>
+	<li class="uk-nav-divider"></li>
+	<li><a href="#"><span uk-icon="icon:sign-out" style="padding-right:10px;"></span>Sign out</a></li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</nav> <!-- End Nav -->
 
-			    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+				<div class="large-12 columns" style="padding-top:10px;padding-left:20px;">
+					<div class="row">
+						<h1>Frequently Asked Questions</h1>
+					</div>
+				</div>
+				<div class="large-12 columns" style="padding-top:20px;">
 
-	                 <li class="uk-parent">
-					           <a> How do I add a new question? </a>
-					            <ul class="uk-nav-sub">
-					                <li><p>To add a new question go to app settings and press "Manage Questions" button.</p></li>
 
-					                    </ul>
-					                </li>
-													<hr class="uk-nav-divider ">
-									 <li class="uk-parent" style="font-family:Helvetica;">
-					            <a>Can I insert pictures in my FAQ?</a>
-					            <ul class="uk-nav-sub">
-					                <li><p>
-														Yes! To add a picture follow these simple steps:
-													<br>	1. Enter App Settings
-													<br>	2. Click the "Manage Questions" button
-													<br>	3. Click on the question you would like to attach a picture to
-													<br>	4. When editing your answer, click on the picture icon and then add an image from your library </p></li>
-
-					                    </ul>
-					                </li>
-													<hr class="uk-nav-divider">
-							 <li class="uk-parent">
-				            <a>Can I insert a video in my FAQ?</a>
-				            <ul class="uk-nav-sub">
-				                <li><p>
-												      1. Enter App Settings
-												<br>	2. Click the "Manage Questions" button
-												<br>	3. Click on the question you would like to insert video to
-												<br>	4. When editing your answer, click on the video icon and then paste the YouTube or Vimeo video URL
-											  <br>  5. That's it! A thumbnail of your video will appear in answer text box </p></li>
-
-										</ul>
+					<ul uk-accordion="multiple:true; ">
+						<li class="uk-open">
+							<h1 class="uk-accordion-title" style="background-color:  #8dc8e8;border: 1px solid white; padding:15px; color: white;height:50px;"> How do I add a new question?</h1>
+							<div class="uk-accordion-content" style="padding:10px;">
+								<i>To add a new question go to app settings and press "Manage Questions" button.</i>
+							</div>
+						</li>
+						<li>
+							<h3 class="uk-accordion-title"style="background-color:  #8dc8e8;border: 1px solid white; padding:15px; color: white;height:50px;">Can I insert pictures in my FAQ?</h3>
+							<div class="uk-accordion-content" style="padding:10px;">
+								<i>Yes! To add a picture follow these simple steps:
+									<br>	1. Enter App Settings
+									<br>	2. Click the "Manage Questions" button
+									<br>	3. Click on the question you would like to attach a picture to
+									<br>	4. When editing your answer, click on the picture icon and then add an image from your library</i>
+								</div>
+							</li>
+							<li>
+								<h3 class="uk-accordion-title" style="background-color:  #8dc8e8;border: 1px solid white; padding:15px; color: white;height:60px;">Can I insert a video in my FAQ?</h3>
+								<div class="uk-accordion-content" style="padding:10px;">
+									<i>1. Enter App Settings
+										<br>	2. Click the "Manage Questions" button
+										<br>	3. Click on the question you would like to insert video to
+										<br>	4. When editing your answer, click on the video icon and then paste the YouTube or Vimeo video URL
+										<br>  5. That's it! A thumbnail of your video will appear in answer text box</i>
+									</div>
+								</li>
+								<li>
+									<h3 class="uk-accordion-title" style="background-color:  #8dc8e8;border: 1px solid white;padding:15px; color: white;height:60px;">How do I edit or remove the "FAQ title"?</h3>
+									<div class="uk-accordion-content" style="padding:10px;">
+										<i>The FAQ title can be adjusted in the settings tab of the App Settings.
+											You can also remove the title by unchecking</i>
+										</div>
+									</li>
+									<li>
+										<h3 class="uk-accordion-title" style="background-color:  #8dc8e8;border: 1px solid white;padding:15px; color: white;height:60px;">Is hotdog delicious?</h3>
+										<div class="uk-accordion-content" style="padding:10px;">
+											<i>Yes, it is very indeed
+												You can also eat the chocolate</i>
+											</div>
 										</li>
-										<hr class="uk-nav-divider">
-	        <li class="uk-parent">
-						 <a>How do I edit or remove the "FAQ title"?</a>
-						 	<ul class="uk-nav-sub">
-								 <li><p>The FAQ title can be adjusted in the settings tab of the App Settings.
-									 You can also remove the title by unchecking</p></li>
-			            </ul>
-			        </li>
+										<li>
+											<h3 class="uk-accordion-title" style="background-color:  #8dc8e8;border: 1px solid white;padding:15px; color: white;height:60px;">How much is the premium version?</h3>
+											<div class="uk-accordion-content" style="padding:10px;">
+												<i>It is expensive, but totally worth it.
+													</i>
+												</div>
+											</li>
+									</ul>
+							</div>
+						</div>
 
+						<!-- footer section -->
+						<footer>
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-5">
+										<img src="images/addlevel_logo_white_trans.svg" class="addlevelLogo">
+										<ul class="sitemap">
+											<li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">FAQ</a></li>
+											<li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">Questions</a></li>
+											<li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">MyProfile</a></li>
+											<li><a href="#" class="wow fadeIn" data-wow-delay="0.3s">Contact</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-2"></div>
+									<div class="col-sm-5">
+										<ul class="social-icon">
+											<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+											<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+											<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+											<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
+											<li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="0.9s"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</footer>
 
-			</div>
-
-</div>
-</div>
-
-<nav class="top-bar topbar-responsive">
-
-	<div class="top-bar-title">
-		<span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
-			<button class="menu-icon" type="button" data-toggle></button>
-		</span>
-		<a class="topbar-responsive-logo" href="#"><strong>Addlevel ProjectALIS</strong></a>
-	</div>
-
-
-	<div id="topbar-responsive" class="topbar-responsive-links" style="padding-top:13px;">
-			<div class="top-bar-left">
-				<ul class="menu simple vertical medium-horizontal">
-					<li><a href="#">Dashboard</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-			<div class="top-bar-right">
-				<ul class="dropdown menu" data-dropdown-menu>
-					<li>
-						<a href="#">Client@addlevel.se</a>
-						<ul class="menu vertical">
-							<li><a href="#">Profile</a></li>
-							<li><a href="#">Logout</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-
-		</div>
-	</div>
-</nav>
-
-
-	<div class="large-12 columns" style="padding-top:10px;padding-left:20px;">
-		<div class="row">
-		<h1>Frequently Asked Questions</h1>
-	</div>
-	</div>
-	<div class="large-12 columns" style="padding-top:20px;">
-
-
-			<ul uk-accordion="multiple:true; ">
-    <li class="uk-open">
-        <h3 class="uk-accordion-title" style="background-color:  #0093d0;border: 1px solid white; padding:15px; color: white;height:60px;"> How do I add a new question?</h3>
-        <div class="uk-accordion-content" style="padding:10px;">
-            <i>To add a new question go to app settings and press "Manage Questions" button.</i> <!-- #8dc8e8-->
-        </div>
-    </li>
-    <li>
-        <h3 class="uk-accordion-title"style="background-color:  #0093d0;border: 1px solid white; padding:15px; color: white;height:60px;">Can I insert pictures in my FAQ?</h3>
-        <div class="uk-accordion-content" style="padding:10px;">
-            <i>Yes! To add a picture follow these simple steps:
-					<br>	1. Enter App Settings
-					<br>	2. Click the "Manage Questions" button
-					<br>	3. Click on the question you would like to attach a picture to
-					<br>	4. When editing your answer, click on the picture icon and then add an image from your library</i>
-        </div>
-    </li>
-    <li>
-        <h3 class="uk-accordion-title" style="background-color:  #0093d0;border: 1px solid white; padding:15px; color: white;height:60px;">Can I insert a video in my FAQ?</h3>
-        <div class="uk-accordion-content" style="padding:10px;">
-            <i>1. Enter App Settings
-			<br>	2. Click the "Manage Questions" button
-			<br>	3. Click on the question you would like to insert video to
-			<br>	4. When editing your answer, click on the video icon and then paste the YouTube or Vimeo video URL
-			<br>  5. That's it! A thumbnail of your video will appear in answer text box</i>
-        </div>
-    </li>
-		<li>
-        <h3 class="uk-accordion-title" style="background-color:  #0093d0;border: 1px solid white;padding:15px; color: white;height:60px;">How do I edit or remove the "FAQ title"?</h3>
-        <div class="uk-accordion-content" style="padding:10px;">
-            <i>The FAQ title can be adjusted in the settings tab of the App Settings.
-							You can also remove the title by unchecking</i>
-        </div>
-    </li>
-</ul>
-    </div>
-	</div>
-</div>
-	<div>
-</body>
-</html>
+					</body>
+					</html>

@@ -9,9 +9,9 @@
 	<!-- UIkit CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link red="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/app.css">
+  <link red="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/foundation.css">
-	<link rel="stylesheet" href="css/app.css">
 
 	<!-- jQuery is required -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -27,37 +27,36 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
 <body>
 
+  <n<!-- Navigation  Section-->
   <nav class="uk-navbar-container" uk-navbar style="background-color:#0093d0;">
-    <div class="uk-navbar-left">
-       <a class="uk-navbar-item uk-logo" href="#">
-       <img src="addlevel_logo_white_trans0.svg" width="120" height="120"uk-svg style="padding-bottom:7px;"></a>
+  <div class="uk-navbar-left">
+  <a class="uk-navbar-item uk-logo" href="#">
+  <img src="images/addlevel_logo_white_trans.svg" width="120" height="120"uk-svg style="padding-bottom:7px;"></a>
+  <ul class="uk-navbar-nav ">
+  <li class="uk-active " ><a href=""><b><font color="white" size="2em;">Dashboard</font></b></a></li>
+  <li class="uk-parent"><a href=""><b><font color="white" size="2em;">Questionaire</font></b></a></li>
+  <li class="uk-parent"><a href=""><b><font color="white" size="2em;">Contact</font></b></a></li>
+  <li><a href=""><b><font color="white" size="2em;">FAQ</font></b></a></li>
+  </ul>
+  </div>
+  <div class="uk-navbar-right" style="padding-right:20px;">
 
-        <ul class="uk-navbar-nav ">
-
-            <li class="uk-active " ><a href=""><b><font color="white" size="1em;">Dashboard</font></b></a></li>
-            <li class="uk-parent"><a href=""><b><font color="white" size="1em;">Contact</font></b></a></li>
-            <li><a href=""><b><font color="white" size="1em;">FAQ</font></b></a></li>
-
-        </ul>
-
-    </div>
-    <div class="uk-navbar-right" style="padding-right:20px;">
-
-        <ul class="uk-navbar-nav">
-            <li>
-                <a href="#">
-                  <span uk-icon="icon:user" style="padding-right:5px;padding-bottom:5px;color:white;"></span><b><font color="white" size="1em;";">My profile</font></b>
-                </a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-
-                        <li><a href="#">
-                          <span uk-icon="icon:settings" style="padding-right:10px;"></span>Profile </a></li>
-                        <li class="uk-nav-divider"></li>
-                        <li><a href="#"><span uk-icon="icon:sign-out" style="padding-right:10px;"></span>Sign out</a></li>
-                    </ul>
-                </div>
-</nav>
+  <ul class="uk-navbar-nav">
+  <li>
+  <a href="#">
+  <span uk-icon="icon:user" style="padding-right:5px;padding-bottom:5px;color:white;"></span><b><font color="white" size="2em;">My profile</font></b>
+  </a>
+  <div class="uk-navbar-dropdown">
+  <ul class="uk-nav uk-navbar-dropdown-nav">
+  <li><a href="#">
+  <span uk-icon="icon:settings" style="padding-right:10px;"></span>Profile </a></li>
+  <li class="uk-nav-divider"></li>
+  <li><a href="#"><span uk-icon="icon:sign-out" style="padding-right:10px;"></span>Sign out</a></li>
+  </ul>
+  </div>
+  </li>
+  </ul>
+  </nav> <!-- End Nav -->
 
 
 	<div class="row">

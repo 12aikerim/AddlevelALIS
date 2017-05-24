@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Framework -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- Custom CSS -->
@@ -22,48 +22,36 @@
 </head>
 
 <body>
-  <!-- navigation section -->
-  <nav class="uk-navbar-container" uk-navbar>
 
-      <div class="uk-navbar-left">
+	    <!-- Navigation  Section-->
+	    <nav class="uk-navbar-container" uk-navbar style="background-color:#0093d0;">
+	      <div class="uk-navbar-left">
+	        <a class="uk-navbar-item uk-logo" href="#">
+	          <img src="images/addlevel_logo_white_trans.svg" width="120" height="120"uk-svg style="padding-bottom:7px;"></a>
+	          <ul class="uk-navbar-nav ">
+	            <li class="uk-active " ><a href=""><b><font color="white" size="2em;">Dashboard</font></b></a></li>
+	            <li class="uk-parent"><a href=""><b><font color="white" size="2em;">Contact</font></b></a></li>
+	            <li><a href=""><b><font color="white" size="2em;">FAQ</font></b></a></li>
+	          </ul>
+	      </div>
+	        <div class="uk-navbar-right" style="padding-right:20px;">
 
-          <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="#">Active</a></li>
-              <li>
-                  <a href="#">Parent</a>
-                  <div class="uk-navbar-dropdown">
-                      <ul class="uk-nav uk-navbar-dropdown-nav">
-                          <li class="uk-active"><a href="#">Active</a></li>
-                          <li><a href="#">Item</a></li>
-                          <li><a href="#">Item</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li><a href="#">Item</a></li>
-          </ul>
-
-      </div>
-
-      <div class="uk-navbar-right">
-
-          <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="#">Active</a></li>
-              <li>
-                  <a href="#">Parent</a>
-                  <div class="uk-navbar-dropdown">
-                      <ul class="uk-nav uk-navbar-dropdown-nav">
-                          <li class="uk-active"><a href="#">Active</a></li>
-                          <li><a href="#">Item</a></li>
-                          <li><a href="#">Item</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li><a href="#">Item</a></li>
-          </ul>
-
-      </div>
-
-  </nav>
+	        <ul class="uk-navbar-nav">
+	          <li>
+	            <a href="#">
+	              <span uk-icon="icon:user" style="padding-right:5px;padding-bottom:5px;color:white;"></span><b><font color="white" size="2em;">My profile</font></b>
+	            </a>
+	            <div class="uk-navbar-dropdown">
+	              <ul class="uk-nav uk-navbar-dropdown-nav">
+	                <li><a href="#">
+	                <span uk-icon="icon:settings" style="padding-right:10px;"></span>Profile </a></li>
+	                <li class="uk-nav-divider"></li>
+	                <li><a href="#"><span uk-icon="icon:sign-out" style="padding-right:10px;"></span>Sign out</a></li>
+	              </ul>
+	            </div>
+	          </li>
+	        </ul>
+	    </nav> <!-- End Nav -->
 
   <!-- footer section -->
   <footer>
