@@ -1,4 +1,31 @@
+/* Badge color */
+.grey_badge{
+  background-color: #0093d0;
+}
+
+.badge_div_padding_margins{
+  padding: 15px;
+  margin: 8px;
+}
+
+.standard_color{
+  background-color: #0093d0;
+}
+
+.white_text{
+  color: #ffffff;
+}
+
+.table_width{
+  width:80%;
+  padding: 10px;
+}
+
 /* Form Progress */
+.w3-container{
+  text-align: center;
+}
+
 .progress {
   width: 1000px;
   margin: 20px auto;
@@ -7,10 +34,10 @@
 .progress .circle,
 .progress .bar {
   display: inline-block;
-  background: #fff;
+  background: #0093d0;;
   width: 40px; height: 40px;
   border-radius: 40px;
-  border: 1px solid #d5d5da;
+  border: 1px solid #0093d0;
 }
 .progress .bar {
   position: relative;
@@ -30,11 +57,11 @@
   line-height: 32px;
   border-radius: 32px;
   margin-top: 3px;
-  color: #b5b5ba;
+  color: #0093d0;
   font-size: 17px;
 }
 .progress .circle .title {
-  color: #b5b5ba;
+  color: #0093d0;;
   font-size: 13px;
   line-height: 30px;
   margin-left: -5px;
@@ -50,19 +77,19 @@
 }
 .progress .circle.done .label {
   color: #FFF;
-  background: #8bc435;
+  background: #0093d0;;
   box-shadow: inset 0 0 2px rgba(0,0,0,.2);
 }
 .progress .circle.done .title {
-  color: #444;
+  color: #0093d0;
 }
 .progress .circle.active .label {
   color: #FFF;
-  background: #0c95be;
+  background: #0093d0;;
   box-shadow: inset 0 0 2px rgba(0,0,0,.2);
 }
 .progress .circle.active .title {
-  color: #0c95be;
+  color: #0093d0;;
 }
 
 strong {
@@ -74,16 +101,16 @@ em {
 }
 
 table {
-background: #f5f5f5;
+background: #0093d0;;
 font-size: 12px;
 line-height: 24px;
 margin: 30px auto;
-text-align: left;
-width: 800px;
+text-align: center;
+
 }
 
 th {
-	background:#4286f4;
+	background:#0093d0;;
 	color: #fff;
     font-weight: bold;
 	padding: 10px 15px;
@@ -111,8 +138,12 @@ tbody:hover td {
 }
 
 tbody:hover tr:hover td {
-	color: #444;
+	color: #0093d0;
 	text-shadow: 0 1px 0 #fff;
+}
+
+.table_title{
+  text-align: center;
 }
 
 .app-dashboard-body-content {
