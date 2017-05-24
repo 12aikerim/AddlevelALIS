@@ -55,7 +55,9 @@ h5.alert_message_subtitle{
   margin-right: 0%;
 }
 .app-dashboard-body-content {
-  width: 50%;
+    max-height: calc(100% - 130px);
+    position: fixed;
+    width: calc(100% - 250px);
 }
 
 p{
@@ -68,14 +70,20 @@ button {
 
 .app-dashboard-sidebar {
   position: fixed;
-  z-index: 0;
-  height: calc(100% - 130px);
+  z-index: 0 !important;
+  min-height: calc(100% - 130px);
 }
 
 .app-dashboard-sidebar-title-area {
   height: 50px;
 }
 
-.app-dashboard-sidebar .app-dashboard-sidebar-inner {
-  height: calc(100% - 50px);
+.app-dashboard-sidebar-inner {
+padding-left: 20px;
+    padding-top: 20px;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
 }

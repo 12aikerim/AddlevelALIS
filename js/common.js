@@ -17,3 +17,7 @@ var create_options = function(data) {
     });
     return html;
 }
+
+var get_questions = function (controlId) {
+
+}

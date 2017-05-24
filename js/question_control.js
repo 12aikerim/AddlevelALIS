@@ -21,6 +21,7 @@ $(document).ready(function () {
         url: siteRoot + '/question/controls',
         type: 'get',
         success: function (data, textStatus, jqxhr) {
+            sessionStorage.setItem('controls', jqxhr.responseText);
             var controls = '';
             $.each(data, function (idx, obj) {
                 controls += create_control(obj);
@@ -37,7 +38,7 @@ $(document).ready(function () {
         else {
             var id = $('input[type=hidden]', this).val();
             sessionStorage.setItem('controlId', id);
-            document.location.href = "/question_table.html";
+            document.location.href = "/question_individual.html";
         }
 
     });

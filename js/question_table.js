@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var controlId = sessionStorage.getItem('controlId');;
+    var controlId = sessionStorage.getItem('controlId');
     $.ajax({
         url: siteRoot + '/question/questions?controlId=' + controlId,
         type: 'get',
