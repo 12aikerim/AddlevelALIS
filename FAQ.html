@@ -1,20 +1,30 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en" dir="ltr">
 <head>
 	<title>ALIS UI</title>
 	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- UIkit CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
-  <link rel="stylesheet" href="css/contact.css"/>
- 	<!-- jQuery is required -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link red="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/app.css">
+
+	<!-- jQuery is required -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<!-- UIkit JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit-icons.min.js"></script>
 </head>
+<!-- Compressed CSS -->
 
+
+<!-- Compressed JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
 <body>
 <div class="uk-section uk-section-default">
     <div class="uk-container" style="background-color:red;padding-bottom: 40px;background-color:#c6c1c8;
@@ -72,5 +82,88 @@
 
 </div>
 </div>
+
+<nav class="top-bar topbar-responsive">
+
+	<div class="top-bar-title">
+		<span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+			<button class="menu-icon" type="button" data-toggle></button>
+		</span>
+		<a class="topbar-responsive-logo" href="#"><strong>Addlevel ProjectALIS</strong></a>
+	</div>
+
+
+	<div id="topbar-responsive" class="topbar-responsive-links" style="padding-top:13px;">
+			<div class="top-bar-left">
+				<ul class="menu simple vertical medium-horizontal">
+					<li><a href="#">Dashboard</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="top-bar-right">
+				<ul class="dropdown menu" data-dropdown-menu>
+					<li>
+						<a href="#">Client@addlevel.se</a>
+						<ul class="menu vertical">
+							<li><a href="#">Profile</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</nav>
+
+
+	<div class="large-12 columns" style="padding-top:10px;padding-left:20px;">
+		<div class="row">
+		<h1>Frequently Asked Questions</h1>
+	</div>
+	</div>
+	<div class="large-12 columns" style="padding-top:20px;">
+
+
+			<ul uk-accordion="multiple:true; ">
+    <li class="uk-open">
+        <h3 class="uk-accordion-title" style="background-color:  #0093d0;border: 1px solid white; padding:15px; color: white;height:60px;"> How do I add a new question?</h3>
+        <div class="uk-accordion-content" style="padding:10px;">
+            <i>To add a new question go to app settings and press "Manage Questions" button.</i> <!-- #8dc8e8-->
+        </div>
+    </li>
+    <li>
+        <h3 class="uk-accordion-title"style="background-color:  #0093d0;border: 1px solid white; padding:15px; color: white;height:60px;">Can I insert pictures in my FAQ?</h3>
+        <div class="uk-accordion-content" style="padding:10px;">
+            <i>Yes! To add a picture follow these simple steps:
+					<br>	1. Enter App Settings
+					<br>	2. Click the "Manage Questions" button
+					<br>	3. Click on the question you would like to attach a picture to
+					<br>	4. When editing your answer, click on the picture icon and then add an image from your library</i>
+        </div>
+    </li>
+    <li>
+        <h3 class="uk-accordion-title" style="background-color:  #0093d0;border: 1px solid white; padding:15px; color: white;height:60px;">Can I insert a video in my FAQ?</h3>
+        <div class="uk-accordion-content" style="padding:10px;">
+            <i>1. Enter App Settings
+			<br>	2. Click the "Manage Questions" button
+			<br>	3. Click on the question you would like to insert video to
+			<br>	4. When editing your answer, click on the video icon and then paste the YouTube or Vimeo video URL
+			<br>  5. That's it! A thumbnail of your video will appear in answer text box</i>
+        </div>
+    </li>
+		<li>
+        <h3 class="uk-accordion-title" style="background-color:  #0093d0;border: 1px solid white;padding:15px; color: white;height:60px;">How do I edit or remove the "FAQ title"?</h3>
+        <div class="uk-accordion-content" style="padding:10px;">
+            <i>The FAQ title can be adjusted in the settings tab of the App Settings.
+							You can also remove the title by unchecking</i>
+        </div>
+    </li>
+</ul>
+    </div>
+	</div>
+</div>
+	<div>
 </body>
 </html>
