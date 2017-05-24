@@ -1,10 +1,24 @@
 ﻿function create_li(control) {
-    var html = "";
-    for (i = 1; i <= control.count; i++) {
-        html += `<li><a href="question_individual.html?qId=${i}">Question ${i}</a></li>`;
-    }
-    return html;
+    $.ajax({
+        url: siteRoot + '/question/isanswered?controlId=' + control.id,
+        type: 'get',
+        success: function (data, textStatus, jqxhr) {
+            var html = "";
+            $.each(data, function (idx, obj) {
+                if (obj.answered)
+                    html += '<li><span class="uk-margin-small-right" uk-icon="icon: check" style="color:green" href="#modal-table" uk-toggle></span>' +
+                        `<a href="question_individual.html?qId=${obj.subControl}">Question ${obj.subControl}</a></li>`;
+                else
+                    html += '<li><span class="uk-margin-small-right" uk-icon="icon: minus-circle" style="color:red" href="#modal-caption" uk-toggle></span>' +
+                        `<a href="question_individual.html?qId=${obj.subControl}">Question ${obj.subControl}</a></li>`;
+            });
+            $('#sidebar-questions').html(html);
+
+        }
+    });
 }
+//<span class="uk-margin-small-right" uk-icon="icon: check" style="color:green" href="#modal-table" uk-toggle></span>
+//<span class="uk-margin-small-right" uk-icon="icon: minus-circle" style="color:red" href="#modal-caption" uk-toggle></span>
 
 function create_opt(question) {
     var opt = question.options;
@@ -55,7 +69,7 @@ $(document).ready(function () {
     console.log(question);
 
     $('#sidebar-control').html(control.title);
-    $('#sidebar-questions').html(create_li(control));
+    create_li(control)
 
     $('#question-title').html(`Question ${question.subControl}`);
     $('#question-text').html(question.question);
