@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Addlevel</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Framework -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/framework.css">
+	<link rel="stylesheet" href="css/question_table.css"/>
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<!-- Script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit-icons.min.js"></script>
+	<script type="text/javascript" src="js/question_table.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- ABDULLAH this div is the div containing all of the control badges -->
+<!-- This is the one you can populate -->
+	<div class="row table_width badge_div_padding" id = "control-badge">
+		<span class="uk-badge grey_badge badge_div_padding_margins"></span>
+		<span class="uk-badge grey_badge badge_div_padding_margins">Management and Technology</span>
+		<span class="uk-badge grey_badge badge_div_padding_margins">There Are Seven Words In The Title</span>
+		<span class="uk-badge grey_badge badge_div_padding_margins">Company Security Sweden United States</span>
+		<span class="uk-badge grey_badge badge_div_padding_margins">Alpha Beta To Get Error</span>
+		<span class="uk-badge grey_badge badge_div_padding_margins">Management and Technology</span>
+		<span class="uk-badge grey_badge badge_div_padding_margins">ompany Security Sweden United States</span>
+		<span class="uk-badge grey_badge badge_div_padding_margins">Alpha Beta To Get Error</span>
+	</div>
+
+	<!-- table -->
+<div class="row table_width" id = "control-table">
+	<table class = "standard_color">
+		<thead>
+			<tr >
+				<th class = "table_title">Number</th>
+				<th class = "table_title">Description</th>
+				<th class = "table_title">Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><strong>1</strong></td>
+				<td>Service Control</td>
+				<td>
+					<span class="uk-margin-small-right" uk-icon="icon: check" style="color:green"href="#modal-table" uk-toggle></span>
+
+					<div id="modal-table" uk-modal="center: true">
+						<div class="uk-modal-dialog">
+							<button class="uk-modal-close-default" type="button" uk-close></button>
+							<table class="uk-table">
+								<thead>
+									<tr>
+										<th>Control Name </th>
+									</tr>
+								</thead>
+								<tr>
+									<td>Recommendation</td>
+								</tr>
+
+								<tbody>
+									<tr>
+										<td>Question- whole sentence</td>
+									</tr>
+									<tr>
+										<td>Your Answer</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><strong>2</strong></td>
+				<td>Consulting</td>
+				<td>
+					<span class="uk-margin-small-right" uk-icon="icon: minus-circle"style="color:red" href ="#modal-caption"uk-toggle></span>
+					<div id="modal-caption" uk-modal="center: true">
+						<div class="uk-modal-dialog">
+							<button class="uk-modal-close-default" type="button" uk-close></button>
+							<q>You need to complete the question to see the recommendations.</p>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class = "row table_width">
+	<div class="w3-light-grey">
+		<div class="w3-container standard_color white_text" id = "control-progress" style="width:75%">75%</div>
+	</div>
+</div>
+
+<!--Script-->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
