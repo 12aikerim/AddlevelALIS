@@ -7,7 +7,7 @@ $(document).ready(function () {
 			type: 'post',
 			data: $(this).serializeArray(),
 			success: function(data, textStatus, jqxhr) {
-				window.location.href = '/client-dashboard.html';
+				window.location.href = '/profile.html';
 			},
             error: function (jqxhr, textStatus, errorThrown) {
                 var errors = jqxhr.responseJSON;
@@ -30,8 +30,8 @@ $(document).ready(function () {
 			success: function(data, textStatus, jqxhr) {
 				// todo: tell user to go check their email
 				// todo: redirect user to home page
-				alert("Please check your email for verification email");
-				window.location.href = '/client-dashboard.html';
+                alert("Please check your email for verification email");
+                window.location.reload();
 			},
 			error: function(jqxhr, textStatus, errorThrown) {
 				// todo: display errors
