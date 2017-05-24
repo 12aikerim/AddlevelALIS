@@ -1,200 +1,197 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project ALIS</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Addlevel</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- UIkit CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <!-- Framework -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/app.css">
-  <link red="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/footer.css">
 
-	<!-- jQuery is required -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-	<!-- UIkit JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit-icons.min.js"></script>
+  <!-- Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit-icons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
 </head>
-<!-- Compressed CSS -->
 
-
-<!-- Compressed JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
 <body>
 
-  <n<!-- Navigation  Section-->
-  <nav class="uk-navbar-container" uk-navbar style="background-color:#0093d0;">
-  <div class="uk-navbar-left">
-  <a class="uk-navbar-item uk-logo" href="#">
-  <img src="images/addlevel_logo_white_trans.svg" width="120" height="120"uk-svg style="padding-bottom:7px;"></a>
-  <ul class="uk-navbar-nav ">
-  <li class="uk-active " ><a href=""><b><font color="white" size="2em;">Dashboard</font></b></a></li>
-  <li class="uk-parent"><a href=""><b><font color="white" size="2em;">Questionaire</font></b></a></li>
-  <li class="uk-parent"><a href=""><b><font color="white" size="2em;">Contact</font></b></a></li>
-  <li><a href=""><b><font color="white" size="2em;">FAQ</font></b></a></li>
-  </ul>
-  </div>
-  <div class="uk-navbar-right" style="padding-right:20px;">
-
-  <ul class="uk-navbar-nav">
-  <li>
-  <a href="#">
-  <span uk-icon="icon:user" style="padding-right:5px;padding-bottom:5px;color:white;"></span><b><font color="white" size="2em;">My profile</font></b>
-  </a>
-  <div class="uk-navbar-dropdown">
-  <ul class="uk-nav uk-navbar-dropdown-nav">
-  <li><a href="#">
-  <span uk-icon="icon:settings" style="padding-right:10px;"></span>Profile </a></li>
-  <li class="uk-nav-divider"></li>
-  <li><a href="#"><span uk-icon="icon:sign-out" style="padding-right:10px;"></span>Sign out</a></li>
-  </ul>
-  </div>
-  </li>
-  </ul>
-  </nav> <!-- End Nav -->
-
-
-	<div class="row">
-	  <div class="large-12 columns" style="padding-left:5px;padding-top:10px;">
-	    <h1>Client Portal</h1>
-	  </div>
-	</div>
-
-  <div class="row">
-    <div class="callout">
-  <p>This is progress bar</p>
-  <div class="progress" role="progressbar" tabindex="0" aria-valuenow="250" aria-valuemin="0" aria-valuetext="55 percent" aria-valuemax="450" style="border: 1px solid white;border-radius:20px;">
-  <span class="progress-meter" style="width: 55%;border: 1px hiden;border-radius: 20px;">
-    <p class="progress-meter-text">250/450</p>
-  </span>
+<!-- Navigation  Section-->
+<nav class="uk-navbar-container" uk-navbar style="background-color:#0093d0;">
+<div class="uk-navbar-left">
+<a class="uk-navbar-item uk-logo" href="#">
+<img src="images/addlevel_logo_white_trans.svg" width="120" height="120"uk-svg style="padding-bottom:7px;"></a>
+<ul class="uk-navbar-nav ">
+<li class="uk-active " ><a href=""><b><font color="white" size="2em;">Dashboard</font></b></a></li>
+<li class="uk-parent"><a href=""><b><font color="white" size="2em;">Questionaire</font></b></a></li>
+<li class="uk-parent"><a href=""><b><font color="white" size="2em;">Contact</font></b></a></li>
+<li><a href=""><b><font color="white" size="2em;">FAQ</font></b></a></li>
+</ul>
 </div>
-  </div>
+<div class="uk-navbar-right" style="padding-right:20px;">
+
+<ul class="uk-navbar-nav">
+<li>
+<a href="#">
+<span uk-icon="icon:user" style="padding-right:5px;padding-bottom:5px;color:white;"></span><b><font color="white" size="2em;">My profile</font></b>
+</a>
+<div class="uk-navbar-dropdown">
+<ul class="uk-nav uk-navbar-dropdown-nav">
+<li><a href="#">
+<span uk-icon="icon:settings" style="padding-right:10px;"></span>Profile </a></li>
+<li class="uk-nav-divider"></li>
+<li><a href="#"><span uk-icon="icon:sign-out" style="padding-right:10px;"></span>Sign out</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</nav> <!-- End Nav -->
+
+
+<div class="row">
+<div class="large-12 columns" style="padding-left:5px;padding-top:10px;">
+<h1>Client Portal</h1>
+</div>
 </div>
 
-
-
-
-	<div class="large-12 columns" style="padding-top:20px;">
-   <div class="row">
-	  <div class="callout">
-
-
-	  <table>
-	    <h5>Difficulty</h5>
-	    <thead>
-	      <tr style="background-color:  #8dc8e8;">
-	        <th width="150">Ranking</th>
-	        <th width="150">Question #</th>
-	        <th width="150">Cost %</th>
-	        <th width="150">Scope %</th>
-	        <th width="150">Time %</th>
-	        <th width="150">Overall Difficulty</th>
-	      </tr>
-	    </thead>
-	    <tbody>
-	      <tr>
-	        <td>1</td>
-	        <td>246</td>
-	        <td>30</td>
-	        <td>50</td>
-	        <td>30</td>
-	        <td>110</td>
-	      </tr>
-	      <tr>
-	        <td>2</td>
-	        <td>12</td>
-	        <td>60</td>
-	        <td>20</td>
-	        <td>10</td>
-	        <td>90</td>
-	      </tr>
-	      <tr>
-	        <td>3</td>
-	        <td>449</td>
-	        <td>80</td>
-	        <td>2</td>
-	        <td>3</td>
-	        <td>85</td>
-	      </tr>
-	    </tbody>
-	  </table>
-	</div>
+<div class="row">
+<div class="callout">
+<p>This is progress bar</p>
+<div class="progress" role="progressbar" tabindex="0" aria-valuenow="250" aria-valuemin="0" aria-valuetext="55 percent" aria-valuemax="450" style="border: 1px solid white;border-radius:20px;">
+<span class="progress-meter" style="width: 55%;border: 1px hiden;border-radius: 20px;">
+<p class="progress-meter-text">250/450</p>
+</span>
+</div>
+</div>
 </div>
 
 
-    <div class="row">
-    <div class="callout">
-	  <table>
-	    <h5>Risk Ranking</h5>
-	    <thead>
-	      <tr style="background-color:  #8dc8e8;">
-	        <th width="200">Ranking</th>
-	        <th width="200">Control Title</th>
-	        <th width="200">Risk Value</th>
-	      </tr>
-	    </thead>
-	    <tbody>
-	      <tr >
-	        <td>1</td>
-	        <td>IT Security Management</td>
-	        <td>x</td>
-	      </tr>
-	      <tr>
-	        <td>2</td>
-	        <td>Assessment Management</td>
-	        <td>x</td>
-	      </tr>      <tr>
-	        <td>3</td>
-	        <td>Continuity Management</td>
-	        <td>x</td>
-	      </tr>
-	    </tbody>
-	  </table>
-	</div>
+
+
+<div class="large-12 columns" style="padding-top:20px;">
+<div class="row">
+<div class="callout">
+
+
+<table>
+<h5>Difficulty</h5>
+<thead>
+<tr style="background-color:  #8dc8e8;">
+<th width="150">Ranking</th>
+<th width="150">Question #</th>
+<th width="150">Cost %</th>
+<th width="150">Scope %</th>
+<th width="150">Time %</th>
+<th width="150">Overall Difficulty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>246</td>
+<td>30</td>
+<td>50</td>
+<td>30</td>
+<td>110</td>
+</tr>
+<tr>
+<td>2</td>
+<td>12</td>
+<td>60</td>
+<td>20</td>
+<td>10</td>
+<td>90</td>
+</tr>
+<tr>
+<td>3</td>
+<td>449</td>
+<td>80</td>
+<td>2</td>
+<td>3</td>
+<td>85</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
-	<div class="row">
-    <div class="callout">
-    <table>
-	    <h5>Quick Win</h5>
-	    <thead>
-	      <tr style="background-color:  #8dc8e8;">
-	        <th width="200">Ranking</th>
-	        <th width="200">Question #</th>
-	        <th width="200">Quick-win Value</th>
-	      </tr>
-	    </thead>
-	    <tbody>
-	      <tr>
-	        <td>1</td>
-	        <td>IT Security Management</td>
-	        <td>x</td>
-	      </tr>
-	      <tr>
-	        <td>2</td>
-	        <td>Assessment Management</td>
-	        <td>x</td>
-	      </tr>      <tr>
-	        <td>3</td>
-	        <td>Continuity Management</td>
-	        <td>x</td>
-	      </tr>
-	    </tbody>
-	  </table>
-	</div>
+<div class="row">
+<div class="callout">
+<table>
+<h5>Risk Ranking</h5>
+<thead>
+<tr style="background-color:  #8dc8e8;">
+<th width="200">Ranking</th>
+<th width="200">Control Title</th>
+<th width="200">Risk Value</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td>1</td>
+<td>IT Security Management</td>
+<td>x</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Assessment Management</td>
+<td>x</td>
+</tr>      <tr>
+<td>3</td>
+<td>Continuity Management</td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
-	</div>
+
+<div class="row">
+<div class="callout">
+<table>
+<h5>Quick Win</h5>
+<thead>
+<tr style="background-color:  #8dc8e8;">
+<th width="200">Ranking</th>
+<th width="200">Question #</th>
+<th width="200">Quick-win Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>IT Security Management</td>
+<td>x</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Assessment Management</td>
+<td>x</td>
+</tr>      <tr>
+<td>3</td>
+<td>Continuity Management</td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</div>
 
 
-
-
-
-    </body>
-    </html>
+</body>
+</html>

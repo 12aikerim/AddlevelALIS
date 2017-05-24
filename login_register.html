@@ -1,170 +1,126 @@
-﻿<!DOCTYPE html>
-<!-- ================================-->
-<!-- This is the login/register page -->
-<!-- ================================-->
 
-<html lang="en">
-  <head>
-  	<meta charset="utf-8">
-  	<title>Addlevel</title>
-  	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <!-- UIkit CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
 
-    <!-- Framework -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+      <!-- jQuery is required -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/login_register.js"></script>
+      <!-- UIkit JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit-icons.min.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/navigation.css"/>
+    </head>
+    <body>
+      <!-- Navigation  Section-->
+      <nav class="uk-navbar-container" uk-navbar style="background-color:#0093d0;">
+      <div class="uk-navbar-left">
+      <a class="uk-navbar-item uk-logo" href="#">
+      <img src="images/addlevel_logo_white_trans.svg" width="120" height="120"uk-svg style="padding-bottom:7px;"></a>
+      <ul class="uk-navbar-nav ">
+      <li class="uk-active " ><a href=""><b><font color="white" size="2em;">Dashboard</font></b></a></li>
+      <li class="uk-parent"><a href=""><b><font color="white" size="2em;">Questionaire</font></b></a></li>
+      <li class="uk-parent"><a href=""><b><font color="white" size="2em;">Contact</font></b></a></li>
+      <li><a href=""><b><font color="white" size="2em;">FAQ</font></b></a></li>
+      </ul>
+      </div>
+      <div class="uk-navbar-right" style="padding-right:20px;">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/app.css">
-    <link red="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/footer.css">
+      <ul class="uk-navbar-nav">
+      <li>
+      <a href="#">
+      <span uk-icon="icon:user" style="padding-right:5px;padding-bottom:5px;color:white;"></span><b><font color="white" size="2em;">My profile</font></b>
+      </a>
+      <div class="uk-navbar-dropdown">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      <li><a href="#">
+      <span uk-icon="icon:settings" style="padding-right:10px;"></span>Profile </a></li>
+      <li class="uk-nav-divider"></li>
+      <li><a href="#"><span uk-icon="icon:sign-out" style="padding-right:10px;"></span>Sign out</a></li>
+      </ul>
+      </div>
+      </li>
+      </ul>
+      </nav> <!-- End Nav -->
 
-    <!-- Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-    <script type="text/javascript" src="js/login_register.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit-icons.min.js"></script>
-  </head>
-
-  <body>
-
-    <!-- Navigation  Section-->
-    <nav class="uk-navbar-container" uk-navbar style="background-color:#0093d0;">
-    <div class="uk-navbar-left">
-    <a class="uk-navbar-item uk-logo" href="#">
-    <img src="images/addlevel_logo_white_trans.svg" width="120" height="120"uk-svg style="padding-bottom:7px;"></a>
-    <ul class="uk-navbar-nav ">
-    <li class="uk-active " ><a href=""><b><font color="white" size="2em;">Dashboard</font></b></a></li>
-    <li class="uk-parent"><a href=""><b><font color="white" size="2em;">Questionaire</font></b></a></li>
-    <li class="uk-parent"><a href=""><b><font color="white" size="2em;">Contact</font></b></a></li>
-    <li><a href=""><b><font color="white" size="2em;">FAQ</font></b></a></li>
-    </ul>
-    </div>
-    <div class="uk-navbar-right" style="padding-right:20px;">
-
-    <ul class="uk-navbar-nav">
-    <li>
-    <a href="#">
-    <span uk-icon="icon:user" style="padding-right:5px;padding-bottom:5px;color:white;"></span><b><font color="white" size="2em;">My profile</font></b>
-    </a>
-    <div class="uk-navbar-dropdown">
-    <ul class="uk-nav uk-navbar-dropdown-nav">
-    <li><a href="#">
-    <span uk-icon="icon:settings" style="padding-right:10px;"></span>Profile </a></li>
-    <li class="uk-nav-divider"></li>
-    <li><a href="#"><span uk-icon="icon:sign-out" style="padding-right:10px;"></span>Sign out</a></li>
-    </ul>
-    </div>
-    </li>
-    </ul>
-    </nav> <!-- End Nav -->
-
-    <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
-      <div>
-        <div class="center_div top_center_div center_text">
-          <form action="/account/login" method="post" id="login-form">
-            <div class="uk-margin">
-              <div class="uk-inline">
-                <legend class="uk-legend center_div">Login</legend>
-              </div>
-            </div>
-            <fieldset class="uk-fieldset">
+      <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+        <div>
+          <div class="center_div top_center_div center_text">
+            <form action="/account/login" method="post" id="login-form">
               <div class="uk-margin">
                 <div class="uk-inline">
-                  <span class="uk-form-icon" uk-icon="icon: user"></span>
-                  <input class="uk-input" type="email" placeholder="Email" name="email">
+                  <legend class="uk-legend center_div">Login</legend>
+                </div>
+              </div>
+              <fieldset class="uk-fieldset">
+                <div class="uk-margin">
+                  <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                    <input class="uk-input" type="email" placeholder="Email" name="email">
+                  </div>
+                </div>
+                <div class="uk-margin">
+                  <div class="uk-inline">
+                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                    <input class="uk-input" type="password" placeholder="Password" name="password">
+                  </div>
+                </div>
+                <input type="submit" class="uk-button uk-button-primary" value="submit"/>
+                <br>
+                <br>
+                <label><input class="uk-checkbox" type="checkbox" name="rememberme" value="true"> Remember Me</label>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div>
+          <!-- DIV for the registration page -->
+          <div class="register-center_div top_margin center_text">
+            <form action="/account/register" method="post" id="register-form">
+              <div class="uk-margin">
+                <div class="uk-inline">
+                  <legend class="uk-legend">Register</legend>
                 </div>
               </div>
               <div class="uk-margin">
-                <div class="uk-inline">
-                  <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-                  <input class="uk-input" type="password" placeholder="Password" name="password">
+                <input class="uk-input" type="text" placeholder="First Name" name="firstname">
+              </div>
+              <div class="uk-margin">
+                <input class="uk-input" type="text" placeholder="Last Name" name="lastname">
+              </div>
+              <div class="uk-margin">
+                <input class="uk-input" type="text" placeholder="Email" name="email">
+              </div>
+              <div class="uk-margin">
+                <input class="uk-input" type="text" placeholder="Phone" name="phone">
+              </div>
+              <div class="tutorialWrapper">
+                <div class="fieldWrapper">
+                  <div class="uk-margin">
+                    <input class="uk-input" type="password" placeholder="Password" name="password" id="register-password">
+                  </div>
+                  <div class="uk-margin">
+                    <input class="uk-input" type="password" placeholder="Confirm Password" name="confirmPassword" id="register-confirmPassword">
+                  </div>
+                  <div class="uk-margin">
+                    <select class="uk-select" id='register-position' name="position">
+                      <option>Select Position</option>
+                      <option></option>
+                    </select>
+                  </div>
+                  <input type="submit" value="Sign up" class="uk-button uk-button-primary">
                 </div>
               </div>
-              <input type="submit" class="uk-button uk-button-primary" value="submit"/>
-              <br>
-              <br>
-              <label><input class="uk-checkbox" type="checkbox" name="rememberme" value="true"> Remember Me</label>
-            </fieldset>
-          </form>
+              <!-- DIV for the registration half -->
+            </form>
+          </div>
         </div>
       </div>
-      <div>
-        <!-- DIV for the registration page -->
-        <div class="register-center_div top_margin center_text">
-          <form action="/account/register" method="post" id="register-form">
-            <div class="uk-margin">
-              <div class="uk-inline">
-                <legend class="uk-legend">Register</legend>
-              </div>
-            </div>
-            <div class="uk-margin">
-              <input class="uk-input" type="text" placeholder="First Name" name="firstname">
-            </div>
-            <div class="uk-margin">
-              <input class="uk-input" type="text" placeholder="Last Name" name="lastname">
-            </div>
-            <div class="uk-margin">
-              <input class="uk-input" type="text" placeholder="Email" name="email">
-            </div>
-            <div class="uk-margin">
-              <input class="uk-input" type="text" placeholder="Phone" name="phone">
-            </div>
-            <div class="tutorialWrapper">
-              <div class="fieldWrapper">
-                <div class="uk-margin">
-                  <input class="uk-input" type="password" placeholder="Password" name="password" id="register-password">
-                </div>
-                <div class="uk-margin">
-                  <input class="uk-input" type="password" placeholder="Confirm Password" name="confirmPassword" id="register-confirmPassword">
-                </div>
-                <div class="uk-margin">
-                  <select class="uk-select" id='register-position' name="position">
-                    <option>Select Position</option>
-                    <option></option>
-                  </select>
-                </div>
-                <input type="submit" value="Sign up" class="uk-button uk-button-primary">
-              </div>
-            </div>
-            <!-- DIV for the registration half -->
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <!-- footer section -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5">
-                    <img src="images/addlevel_logo_white_trans.svg" class="addlevelLogo">
-                    <ul class="sitemap">
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Questions</a></li>
-                        <li><a href="#">MyProfile</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2"></div>
-                <div class="col-sm-5">
-                    <ul class="social-icon">
-                        <li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-                        <li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-                        <li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
-                        <li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
-                        <li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="0.9s"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <script type="text/javascript" src="js/script.js"></script>
-  </body>
-</html>
+      <script type="text/javascript" src="js/script.js"></script>
+    </body>
+  </html>
