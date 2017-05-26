@@ -1,4 +1,4 @@
-﻿siteRoot = 'http://localhost:61071';
+﻿siteRoot = '';
 
 var getParameterByName =  function(name, url) {
     if (!url) url = window.location.href;
@@ -18,6 +18,15 @@ var create_options = function(data) {
     return html;
 }
 
-var get_questions = function (controlId) {
-
-}
+$(document).ready(function (e) {
+    $('.signout').on('click', function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: siteRoot + '/account/logout',
+            type: 'get',
+            success: function () {
+                window.location.href = '/login_register.html';
+            }
+        })
+    });
+})
